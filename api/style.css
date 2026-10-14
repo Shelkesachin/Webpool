@@ -1,0 +1,225 @@
+:root {
+  --primary: #3C467B;
+  --secondary: #50589C;
+  --accent: #636CCB;
+  --highlight: #6E8CFB;
+  --light: #f8f9fa;
+  --dark: #1a1a2e;
+}
+
+/* Global */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  scroll-behavior: smooth;
+  color: var(--dark);
+  background: var(--light);
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  padding: 15px 0;
+}
+
+.navbar .nav-link,
+.navbar-brand {
+  color: #fff !important;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: var(--highlight) !important;
+}
+
+.navbar .btn-custom {
+  background: var(--highlight);
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar .btn-custom:hover {
+  background: var(--accent);
+}
+
+/* Hero */
+#heroCarousel .carousel-item img {
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+#heroCarousel .carousel-caption {
+  bottom: 20%;
+  text-shadow: 0px 2px 12px rgba(0, 0, 0, 0.8);
+}
+
+#heroCarousel h1 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: #fff;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+#heroCarousel p {
+  font-size: 1.3rem;
+  color: #eaeaea;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+#heroCarousel .btn {
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+#heroCarousel .btn-custom {
+  background: var(--highlight);
+}
+
+#heroCarousel .btn-custom:hover {
+  background: var(--accent);
+  transform: scale(1.05);
+}
+
+#heroCarousel .btn-outline-light:hover {
+  background: #fff;
+  color: var(--secondary);
+}
+
+/* Sections */
+section {
+  padding: 80px 20px;
+}
+
+section h2 {
+  color: var(--primary);
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+
+section h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--highlight);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Services */
+.card {
+  transition: 0.3s ease;
+  border: none;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card i {
+  font-size: 45px;
+  background: linear-gradient(135deg, var(--highlight), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Projects */
+#projects img {
+  border-radius: 16px;
+  transition: 0.4s;
+}
+
+#projects img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Testimonials */
+#testimonials .shadow-sm {
+  border-left: 5px solid var(--highlight);
+  transition: 0.3s;
+}
+
+#testimonials .shadow-sm:hover {
+  background: #f3f5ff;
+  transform: translateY(-5px);
+}
+
+/* CTA */
+.cta {
+  background: linear-gradient(120deg, var(--secondary), var(--highlight));
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  border-radius: 0;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.cta .btn {
+  background: #fff;
+  color: var(--primary);
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.cta .btn:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* Contact */
+#contact form {
+  border-radius: 16px;
+}
+
+#contact .btn-custom {
+  background: var(--highlight);
+  border-radius: 8px;
+}
+
+#contact .btn-custom:hover {
+  background: var(--accent);
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  color: #ddd;
+}
+
+footer a {
+  color: var(--highlight);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {opacity: 0; transform: translateY(-30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeInUp {
+  from {opacity: 0; transform: translateY(30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
