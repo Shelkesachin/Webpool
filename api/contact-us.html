@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="icon" type="image/x-icon" href="./Assets/favicon_io/favicon.ico">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.6.0-web/css/all.min.css">
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
+
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.css" />
+
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/docs_src/assets/css/animate.css">
+
+
+    <!-- WOW.js CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/wow.js/1.1.2/wow.min.css">
+    <link rel="stylesheet" href="./include/sp.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./include/style.css">
+
+    <script src="./include/script.js" defer></script>
+
+    <script>
+        document.addEventListener('keydown', function (event) {
+            // Check if Ctrl+U is pressed
+            if (event.ctrlKey && event.key === 'u') {
+                event.preventDefault(); // Prevent the default action of Ctrl+U
+                // Add your code to disable functionality here
+                console.log('Ctrl+U detected. Functionality disabled.');
+            }
+        });
+    </script>
+
+
+    <style>
+        .kzn-tp-bgimg.defaultimg {
+            background-repeat: no-repeat;
+            background-image: url('../assets/img/background_image.jpg');
+            background-size: cover;
+            background-position: center center;
+            width: 100%;
+            height: 700px;
+            opacity: 1;
+            visibility: inherit;
+            z-index: 20;
+        }
+
+        .kzn-tp-bgimg.defaultimg {
+            background-repeat: no-repeat;
+            background-image: url('../assets/img/background_image.jpg');
+            background-size: cover;
+            background-position: center center;
+            width: 100%;
+            height: 700px;
+            opacity: 1;
+            visibility: inherit;
+            z-index: 20;
+        }
+
+        .section_third.price {
+            padding: 64px 0;
+            background-image: url('./assets/img/dot-pattern.png');
+
+            background-color: #00ffff2e;
+            background-position: center center;
+            width: 100%;
+
+            opacity: 1;
+            visibility: inherit;
+            z-index: 20;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar-top navbar-expand-lg fixed-top text-light pt-2">
+
+        <div class="container first-nav">
+            <div class="row w-100  d-flex">
+                <div class=" sptop col-4 col-sm-4 col-lg-6 col-md-6 d-flex  align-items-center justify-content-between">
+                    <!-- Dropdown for branches on small devices -->
+                    <div class="d-lg-none d-md-none text-center  mobview">
+                        <div class="dropdown">
+                            <a class=" top-sm dropdown-toggle" type="button" id="branchesDropdown"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Branches
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="branchesDropdown">
+                                <a class="dropdown-item" href="./index.html">Pune</a>
+                                <a class="dropdown-item" href="./index.html">Mumbai</a>
+                                <a class="dropdown-item" href="./index.html">Thane</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Horizontal list for larger devices -->
+                    <ul class="navbar-list-top d-flex flex-wrap bs d-none  d-md-flex d-lg-flex  ">
+                        <li class="nav-item-top">
+                            <a class="nav-links px-3  px-md-1" aria-current="page">Branches:</a>
+                        </li>
+                        <li class="nav-item-top">
+                            <a class="nav-links px-3  px-md-1" aria-current="page" href="./index.html">Pune</a>
+                        </li>
+                        <li class="nav-item-top">
+                            <a class="nav-links px-3  px-md-1" aria-current="page" href="./index.html">Mumbai</a>
+                        </li>
+                        <li class="nav-item-top">
+                            <a class="nav-links px-3  px-md-1" aria-current="page" href="./index.html">Thane</a>
+                        </li>
+                    </ul>
+
+                    <!-- Additional Dropdowns -->
+
+                </div>
+                <div
+                    class="col-lg-6  col-4  col-sm-8 col-md-6 text-end d-lg-flex  d-md-flex align-items-center justify-content-end tops text-light  px-1">
+                    <p class="p-top sp ">abc192@gmail.com | +91 1234567890</p>
+                    <span class="dropdown mt-2 topbat  d-lg-none d-md-none ">
+
+
+                        <a class="top-sm  px-2 ">
+                            Call
+                        </a>|
+                        <a class=" top-sm px-2">
+                            Services
+                        </a>
+                    </span>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <nav role="navigation" class="navbar navbar-expand-lg navbar-custom fixed-top primary-navigation ">
+        <div class="container nav-main">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/img/logo-corp-red.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" id="navbarbutton" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="../index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./index.html">DEMOS <i
+                                class="fa-solid rotate-icon fa-chevron-right"></i></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./product.html" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PRODUCT <i class="fa-solid rotate-icon fa-chevron-right"></i>
+                        </a>
+                        <div class="dropdown-menu  " id="dropdown-menu " aria-labelledby="dropdownMenuButton">
+
+
+                            <ul class="submenu_list text-center">
+                                <li class="dropdown-title">full stack developer</li>
+                                <li><a class="dropdown-item" href="./chatbot.html">CHATBOT</a></li>
+                                <!-- <li><hr class="dropdown-divider"></li> -->
+                                <li><a class="dropdown-item" href="./kiosk.html">KIOSK</a></li>
+                                <li><a class="dropdown-item" href="./e_learning.html">E-LEARNING</a></li>
+                                <li><a class="dropdown-item" href="./ai_solution.html">AI-SOLUTION</a></li>
+                                <li><a class="dropdown-item" href="./billing.html">BILLING</a></li>
+                            </ul>
+
+                            <ul>
+                                <li class="dropdown-title  text-center">Testing</li>
+                                <li><a class="dropdown-item" href="./chatbot.html">CHATBOT</a></li>
+                                <!-- <li><hr class="dropdown-divider"></li> -->
+                                <li><a class="dropdown-item" href="./kiosk.html">KIOSK</a></li>
+                                <li><a class="dropdown-item" href="./e_learning.html">E-LEARNING</a></li>
+                                <li><a class="dropdown-item" href="./ai_solution.html">AI-SOLUTION</a></li>
+                                <li><a class="dropdown-item" href="./billing.html">BILLING</a></li>
+                            </ul>
+                            <ul>
+                                <li class="dropdown-title text-center">Marketing</li>
+                                <li><a class="dropdown-item" href="./chatbot.html">CHATBOT</a></li>
+                                <!-- <li><hr class="dropdown-divider"></li> -->
+                                <li><a class="dropdown-item" href="./kiosk.html">KIOSK</a></li>
+                                <li><a class="dropdown-item" href="./e_learning.html">E-LEARNING</a></li>
+                                <li><a class="dropdown-item" href="./ai_solution.html">AI-SOLUTION</a></li>
+                                <li><a class="dropdown-item" href="./billing.html">BILLING</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./service.html" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            COURCES<i class="fa-solid rotate-icon fa-chevron-right"></i>
+                        </a>
+                        <ul class="dropdown-menu submenu_list  service" aria-labelledby="dropdownMenuButton">
+
+                            <li class="dropdowns"><a class="dropdown-item  "
+                                    href="./services/cab_booking.html">DEVELOPMENT <i
+                                        class="fa-solid rotate-icons fa-chevron-down"></i></a>
+
+                                <ul class="dropdown-menu sub sp ">
+                                    <li><a class="dropdown-item" href="./chatbot.html">CHATBOT</a></li>
+                                    <!-- <li><hr class="dropdown-divider"></li> -->
+                                    <li><a class="dropdown-item" href="./kiosk.html">KIOSK</a></li>
+                                    <li><a class="dropdown-item" href="./e_learning.html">E-LEARNING</a></li>
+                                    <li><a class="dropdown-item" href="./ai_solution.html">AI-SOLUTION</a></li>
+                                    <li><a class="dropdown-item" href="./billing.html">BILLING</a></li>
+                                </ul>
+
+
+
+
+
+                            </li>
+                            <li><a class="dropdown-item" href="./services/hotel_manage.html">TESTING</a></li>
+                            <!-- <li><hr class="dropdown-divider"></li> -->
+                            <li><a class="dropdown-item" href="./services/school_manage.html">MARKETING</a></li>
+                            <li><a class="dropdown-item" href="./services/tour_manage.html">COMPUTER</a></li>
+                            <li><a class="dropdown-item" href="./services/ind_base_project.html">BUSINESS STUDIES</a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact-us.html">CONTACT</a>
+                        <!-- </li>   <li class="nav-item">
+                        <a class="nav-link" href="#">Ecommerce</a>
+                    </li>   <li class="nav-item">
+                        <a class="nav-link" href="#">Ecommerce</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Section first start -->
+
+    <div class="kzn-rev_slider_wrapper fullwidthbanner-container" style="overflow: visible; height: 775px;">
+        <div id="kzn-rev-slider1"
+            class="kzn-rev_slider fullwidthabanner revslider-initialised kzn-rev_redraw_on_blurfocus"
+            data-version="5.4.8" style="margin-top: 0px; margin-bottom: 0px; " data-slideactive="rs-245443">
+            <div class="row">
+                <div class="slotholder">
+                    <div class="kzn-tp-bgimg defaultimg img-fluid " data-bgcolor="undefined" src="assets/img/web3.jpg">
+                    </div>
+                </div>
+
+                <div class="kzn-tp-parallax-wrap w-100 container ">
+                    <div class="kzn-tp-loop-wrap">
+                        <div class="kzn-tp-mask-wrap">
+                            <div class="kzn-tp-caption kzn-tp-resizeme font-Poppins font-weight-700  color-fff letter-spaceing-001 not-hover"
+                                data-x="['center','center','center','center']" data-hoffset="['10','10','0','0']"
+                                data-y="['middle','middle','middle','middle']"
+                                data-voffset="['-167','-167','-72','-72']" data-fontsize="['80','80','60','40']"
+                                data-lineheight="['100','100','80','60']" data-width="full" data-height="none"
+                                data-whitespace="normal" data-transform_idle="o:1;"
+                                data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000"
+                                data-splitin="none" data-splitout="none"
+                                data-textalign="['center','center','center','center']" data-responsive_offset="on"
+                                id="layer-323948768">
+                                how can we help you?</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kzn-tp-parallax-wrap w-100 ps container">
+                    <div class="kzn-tp-loop-wrap">
+                        <div class="kzn-tp-mask-wrap">
+                            <div class="kzn-tp-caption kzn-tp-resizeme font-Poppins font-weight-400  color-fff letter-spaceing-001 not-hover"
+                                data-x="['center','center','center','center']" data-hoffset="['10','10','0','0']"
+                                data-y="['middle','middle','middle','middle']" data-voffset="['-36','-36','14','14']"
+                                data-fontsize="['20','20','18','15']" data-lineheight="['35','35','30','30']"
+                                data-width="full" data-height="none" data-whitespace="normal" data-transform_idle="o:1;"
+                                data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1500"
+                                data-splitin="none" data-splitout="none"
+                                data-textalign="['center','center','center','center']" data-responsive_offset="on"
+                                id="layer-451987120">
+                                our team is with you ,to solve your query.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kzn-tp-parallax-wrap mt-2">
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Section second start  ------------------------------------------------------------------------->
+    <style>
+        .btn-booking {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .custom-image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 85%;
+            height: auto;
+            margin-bottom: 20px;
+            margin-top: 85px;
+            margin-left: 2%;
+        }
+    </style>
+
+
+    <div class="container mb-3">
+
+        <div class="form-container d-md-flex d-lg-flex   p-4 bg-light border rounded shadow-sm">
+
+            <div class="col-md-6 col-12">
+                <div class="custom-image-container bg-test wow  fadeInUp" data-tilt="" data-tilt-max="5"
+                    data-tilt-speed="1000" data-wow-delay=".6s">
+                    <img src="./assets/img/customer-service.avif" class="custom-image img-fluid rounded "
+                        data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                        alt="Website Mockup">
+                </div>
+            </div>
+            <div class="col-md-6 col-12">
+                <form id="appointmentForm">
+
+                    <h3 class="mb-4">Fill the form below so we can get to know you and your needs better. </h3>
+
+                    <div class="row g-3">
+                        <div class=" col-lg-12 col-12">
+                            <label for="firstName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName" required>
+                            <div class="text-danger d-none" id="firstNameError">First Name is required</div>
+                        </div>
+
+                        <div class=" col-12">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" required pattern="^[0-9]*$">
+                            <div class="text-danger d-none" id="phoneError">Phone is required and must be a valid number
+                            </div>
+                        </div>
+                        <div class=" col-12">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                            <div class="text-danger d-none" id="emailError">Valid Email is required</div>
+                        </div>
+
+
+                        <div class="  col-12">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" name="message"
+                                rows="4"></textarea>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button type="submit" class=" btn btn-mains bg-btn lnk animated pulse-button-bounce">Submit</button>
+                        </div>
+                            <div id="message" class="col-12 text-center mt-3 d-none">
+                                <div class="alert alert-info">Booking successful!</div>
+                            </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- third section ------------------------------------------------------------------------------------------------ -->
+
+    <style>
+        .btn-main.btn-mains.contact {
+            color: white;
+            text-decoration: none;
+            /* margin-left: 20%; */
+            width: 80px;
+            height: 63px;
+            align-items: center;
+            padding-top: 1px;
+            font-size: 42px;
+            padding-left: 15px;
+            padding-right: 41px;
+            /* background-color: #141313; */
+            background-color: #008b0394;
+            margin-left: 41%;
+            margin-top: -28px;
+            overflow: visible;
+            border: 22px;
+            border-radius: 17px;
+            border-bottom-left-radius: 1px;
+            border-top-right-radius: 1px;
+        }
+
+        .card-head {
+            width: 100%;
+            background: white;
+            color: #000;
+        }
+
+        .card.corsedet {
+            /* background: white; */
+            background: #baacac63;
+            overflow: visible;
+            height: auto;
+            border: none;
+
+
+        }
+
+        .hover14 .corsedet::before {
+            display: none;
+        }
+    </style>
+    </style>
+    <section class="section_third price text-center">
+        <div class="container team-sektion paddingTB60">
+
+
+            <div class="d-md-flex d-lg-flex   wrapcard   container">
+                <div class=" card2_1 col-lg-4 col-md-4 col-sm-4 col-12 hover14">
+
+                    <div class="card corsedet text-center ">
+                        <a href="javascript:;" data-aos="zoom-in-up"
+                            class="btn-main btn-mains contact  lnk wow fadeIn popup_open aos-init aos-animate"
+                            onclick="order_now_value(this)" name="for $244" data-wow-delay="0.8s">
+
+
+                            <i class="fas fa-address-card"></i>
+
+                        </a>
+                        <!-- <div class="card-head text-center bg-none">
+                            <img loading="lazy" class="img-fluid   course-photo " alt="portfolio"
+                                src="../assets/img/icon-5.png">
+                        </div> -->
+                        <div class="card-body">
+                            <div class="card-title ps"> Address
+
+                            </div>
+                            <p class="visa-type">adarsh building,am-pm chock,swargate ,pune, 443201,maharashtra
+                            </p>
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class=" card2_1 col-lg-4 col-md-4 col-sm-4 col-12 hover14">
+                    <div class="card corsedet text-center ">
+                        <a href="javascript:;" data-aos="zoom-in-up"
+                            class="btn-main btn-mains  contact lnk wow fadeIn popup_open aos-init aos-animate"
+                            onclick="order_now_value(this)" name="for $244" data-wow-delay="0.8s">
+                            <i class="fa-solid fa-phone"></i>
+                            <span class="circle"></span>
+                        </a>
+                        <!-- <div class="card-head text-center bg-none">
+                            <img loading="lazy" class="img-fluid   course-photo " alt="portfolio"
+                                src="../assets/img/icon-5.png">
+                        </div> -->
+                        <div class="card-body">
+                            <div class="card-title ps">Contact info
+
+                            </div>
+                            <p class="visa-type"> Mobile: +91 1234567890 <br>
+                                Landline:+91 1234567890<br>
+                                Mail: abc@gmail.com
+
+                            </p>
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class=" card2_1 col-lg-4 col-md-4 col-sm-4 col-12 hover14">
+                    <div class="card corsedet text-center ">
+                        <a href="javascript:;" data-aos="zoom-in-up"
+                            class="btn-main btn-mains contact  lnk wow fadeIn popup_open aos-init aos-animate"
+                            onclick="order_now_value(this)" name="for $244" data-wow-delay="0.8s"><i
+                                class="fa-solid fa-clock"></i>
+                            <span class="circle"></span>
+                        </a>
+                        <!-- <div class="card-head text-center bg-none">
+                            <img loading="lazy" class="img-fluid   course-photo " alt="portfolio"
+                                src="../assets/img/icon-5.png">
+                        </div> -->
+                        <div class="card-body">
+                            <div class="card-title ps">Work time
+
+
+                            </div>
+                            <p class="visa-type"> Monday - Friday: 09:00 - 20:00
+                                <br>
+                                Sunday & Saturday: 10:30 - 22:00
+                            </p>
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        </div>
+    </section>
+
+        <!-- 
+
+    <section class="cta-area pb-5 carousels">
+        <div class="container ">
+            <h2>Our Partners/ Our Clients</h2>
+            <div class="kzn-logos">
+                <div class="kzn-slide">
+                    <div class="text-monial">
+                        <div class="reviews-card">
+                            <div class="row v-center">
+                                <div class="col-">
+                                    <span class="revbx-lr">
+                                        <i class="fas fa-quote-left"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="review-text">
+                                <p>Mo Melby at The Weblogy transformed our website with WordPress! It's beautiful,
+                                    informative, and attracts new students. SEO is great too. We're ranking higher on
+                                    Google. Excellent work!</p>
+                            </div>
+                            <div class="-client-details-">
+                                <div class="-reviewr">
+                                    <img src="assets/img/web2.jpg" alt="Good Review">
+                                </div>
+                                <div class="reviewer-text">
+                                    <h4>Isabelle Brock</h4>
+                                    <div class="star-rate">
+                                        <ul>
+
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kzn-slide">
+                    <div class="text-monial">
+                        <div class="reviews-card">
+                            <div class="row v-center">
+                                <div class="col">
+                                    <span class="revbx-lr">
+                                        <i class="fas fa-quote-left"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="review-text">
+                                <p>Mo Melby at The Weblogy transformed our website with WordPress! It's beautiful,
+                                    informative, and attracts new students. SEO is great too. We're ranking higher on
+                                    Google. Excellent work!</p>
+                            </div>
+                            <div class="-client-details-">
+                                <div class="-reviewr">
+                                    <img src="assets/img/web2.jpg" alt="Good Review">
+                                </div>
+                                <div class="reviewer-text">
+                                    <h4>Isabelle Brock</h4>
+                                    <div class="star-rate">
+                                        <ul>
+
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kzn-slide">
+                    <div class="text-monial">
+                        <div class="reviews-card">
+                            <div class="row v-center">
+                                <div class="col">
+                                    <span class="revbx-lr">
+                                        <i class="fas fa-quote-left"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="review-text">
+                                <p>Mo Melby at The Weblogy transformed our website with WordPress! It's beautiful,
+                                    informative, and attracts new students. SEO is great too. We're ranking higher on
+                                    Google. Excellent work!</p>
+                            </div>
+                            <div class="-client-details-">
+                                <div class="-reviewr">
+                                    <img src="assets/img/web2.jpg" alt="Good Review">
+                                </div>
+                                <div class="reviewer-text">
+                                    <h4>Isabelle Brock</h4>
+                                    <div class="star-rate">
+                                        <ul>
+
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kzn-slide">
+                    <div class="text-monial">
+                        <div class="reviews-card">
+                            <div class="row v-center">
+                                <div class="col">
+                                    <span class="revbx-lr">
+                                        <i class="fas fa-quote-left"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="review-text">
+                                <p>Mo Melby at The Weblogy transformed our website with WordPress! It's beautiful,
+                                    informative, and attracts new students. SEO is great too. We're ranking higher on
+                                    Google. Excellent work!</p>
+                            </div>
+                            <div class="-client-details-">
+                                <div class="-reviewr">
+                                    <img src="assets/img/web2.jpg" alt="Good Review">
+                                </div>
+                                <div class="reviewer-text">
+                                    <h4>Isabelle Brock</h4>
+                                    <div class="star-rate">
+                                        <ul>
+
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kzn-slide">
+                    <div class="text-monial">
+                        <div class="reviews-card">
+                            <div class="row v-center">
+                                <div class="col">
+                                    <span class="revbx-lr">
+                                        <i class="fas fa-quote-left"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="review-text">
+                                <p>Mo Melby at The Weblogy transformed our website with WordPress! It's beautiful,
+                                    informative, and attracts new students. SEO is great too. We're ranking higher on
+                                    Google. Excellent work!</p>
+                            </div>
+                            <div class="-client-details-">
+                                <div class="-reviewr">
+                                    <img src="assets/img/web2.jpg" alt="Good Review">
+                                </div>
+                                <div class="reviewer-text">
+                                    <h4>Isabelle Brock</h4>
+                                    <div class="star-rate">
+                                        <ul>
+
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kzn-slide">
+                    <div class="text-monial">
+                        <div class="reviews-card">
+                            <div class="row v-center">
+                                <div class="col">
+                                    <span class="revbx-lr">
+                                        <i class="fas fa-quote-left"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="review-text">
+                                <p>Mo Melby at The Weblogy transformed our website with WordPress! It's beautiful,
+                                    informative, and attracts new students. SEO is great too. We're ranking higher on
+                                    Google. Excellent work!</p>
+                            </div>
+                            <div class="-client-details-">
+                                <div class="-reviewr">
+                                    <img src="assets/img/web2.jpg" alt="Good Review">
+                                </div>
+                                <div class="reviewer-text">
+                                    <h4>Isabelle Brock</h4>
+                                    <div class="star-rate">
+                                        <ul>
+
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kzn-slide">
+                    <div class="text-monial">
+                        <div class="reviews-card">
+                            <div class="row v-center">
+                                <div class="col">
+                                    <span class="revbx-lr">
+                                        <i class="fas fa-quote-left"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="review-text">
+                                <p>Mo Melby at The Weblogy transformed our website with WordPress! It's beautiful,
+                                    informative, and attracts new students. SEO is great too. We're ranking higher on
+                                    Google. Excellent work!</p>
+                            </div>
+                            <div class="-client-details-">
+                                <div class="-reviewr">
+                                    <img src="assets/img/web2.jpg" alt="Good Review">
+                                </div>
+                                <div class="reviewer-text">
+                                    <h4>Isabelle Brock</h4>
+                                    <div class="star-rate">
+                                        <ul>
+
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kzn-slide">
+                    <div class="text-monial">
+                        <div class="reviews-card">
+                            <div class="row v-center">
+                                <div class="col">
+                                    <span class="revbx-lr">
+                                        <i class="fas fa-quote-left"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="review-text">
+                                <p>Mo Melby at The Weblogy transformed our website with WordPress! It's beautiful,
+                                    informative, and attracts new students. SEO is great too. We're ranking higher on
+                                    Google. Excellent work!</p>
+                            </div>
+                            <div class="-client-details-">
+                                <div class="-reviewr">
+                                    <img src="assets/img/web2.jpg" alt="Good Review">
+                                </div>
+                                <div class="reviewer-text">
+                                    <h4>Isabelle Brock</h4>
+                                    <div class="star-rate">
+                                        <ul>
+
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kzn-slide">
+                    <div class="text-monial">
+                        <div class="reviews-card">
+                            <div class="row v-center">
+                                <div class="col">
+                                    <span class="revbx-lr">
+                                        <i class="fas fa-quote-left"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="review-text">
+                                <p>Mo Melby at The Weblogy transformed our website with WordPress! It's beautiful,
+                                    informative, and attracts new students. SEO is great too. We're ranking higher on
+                                    Google. Excellent work!</p>
+                            </div>
+                            <div class="-client-details-">
+                                <div class="-reviewr">
+                                    <img src="assets/img/web2.jpg" alt="Good Review">
+                                </div>
+                                <div class="reviewer-text">
+                                    <h4>Isabelle Brock</h4>
+                                    <div class="star-rate">
+                                        <ul>
+
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)" class="chked">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                            <li><a href="javascript:void(0)">
+                                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section> -->
+        <!-- twellth section ------------------------------------------------------------------------------------------------ -->
+        <section class="pt-5">
+            <div class="contact_map container">
+                <div class="map_inn">
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7015.097532331686!2d77.0257477348877!3d28.463015800000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d199eb5fecb7f%3A0x53c353e7b8c2d305!2sTCA%20%3A%20JavaScript%20AngularJS%20NodeJS%20ReactJS%20AutoCAD%20Solidworks%20CATIA%20NX%20CAD%20CREO%20Training%20in%20Gurgaon!5e0!3m2!1sen!2sin!4v1604910974301!5m2!1sen!2sin" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" data-gtm-yt-inspected-19="true" data-gtm-yt-inspected-22="true"></iframe> -->
+                    <iframe src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15136.91742281814!2d73.83546753440497!3d18.473267399110863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eab26c7c9b63%3A0x8b897c6f06650821!2sKaizen+Softservices!5e0!3m2!1sen!2sin!4v1519043406825" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" data-gtm-yt-inspected-19="true" data-gtm-yt-inspected-22="true"></iframe>
+             
+                </div>
+               
+            </div>
+        </section>
+        <!-- footer start ------------------------------------------- -->
+        <footer class="footer">
+
+
+            <section class=" py-4 py-md-5 py-xl-8 border-top border-light " style="background-color:#141313">
+                <div class="container overflow-hidden">
+                    <div class="row gy-4 gy-lg-0 justify-content-xl-between">
+                        <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+                            <div class="widget">
+                                <a class="brand" href="index.php"><img class="brand-logo-light logo_light img-fluid"
+                                        src="../assets/img/logo-corp-red.png" alt=""></a>
+                                <p class="mb-2 mt-3">Kaizen softservices vision is to be the leading provider of
+                                    affordable and
+                                    sustainable tourism experiences in Dubai and around the world.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+                            <div class="widget">
+                                <h4 class="widget-title mb-4">kaizensoftservices</h4>
+                                <address class="mb-4">swargate, pune, maharashtra, india</address>
+                                <p class="mb-1">
+                                    <a class=" text-decoration-none a-change" href="tel:+15057922430">+91 1234567890</a>
+                                </p>
+                                <p class="mb-0">
+                                    <a class=" text-decoration-none a-change"
+                                        href="mailto:demo@yourdomain.com">abc@gmail.com</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+                            <div class="widget">
+                                <h4 class="widget-title mb-4">Learn More</h4>
+                                <ul class="list-unstyled ">
+                                    <li class="mb-2">
+                                        <a href="#!" class="text-decoration-none a-change ">About</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#!" class=" text-decoration-none a-change">Contact</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#!" class=" text-decoration-none a-change">Advertise</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#!" class=" text-decoration-none a-change">Terms of Service</a>
+                                    </li>
+                                    <li class="mb-0">
+                                        <a href="#!" class=" text-decoration-none a-change">Privacy Policy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3 col-xl-4">
+                            <div class="widget">
+                                <h4 class="widget-title mb-4">Our Newsletter</h4>
+                                <p class="mb-4">Subscribe to our newsletter to get our news & discounts delivered to
+                                    you.
+                                </p>
+                                <form action="#!">
+                                    <div class="row gy-4">
+                                        <div class="col-12">
+                                            <div class="input-group">
+                                                <span class="input-group-text" id="email-newsletter-addon">
+                                                    <i class="bi bi-envelope fs-3"></i>
+                                                </span>
+                                                <input type="email" class="form-control" id="email-newsletter" value=""
+                                                    placeholder="Email Address" aria-label="email-newsletter"
+                                                    aria-describedby="email-newsletter-addon" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="d-grid">
+                                                <button class="btn btn-primary" type="submit">submit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Copyright - Bootstrap Brain Component -->
+            <div class="py-2 py-md-3 py-xl-8 border-top border-light-subtle" style="background-color: black">
+                <div class="container overflow-hidden">
+                    <div class="row gy-4 gy-md-0 align-items-md-center">
+                        <div class="col-xs-12 col-md-7 order-1 order-md-0">
+                            <div class="copyright text-white text-md-start">
+                                &copy; 2024. All Rights Reserved.
+                            </div>
+                            <div class="credits text-white text-center text-md-start mt-2 ">
+                                Powerd by <a href="https://kaizensoftservices.com/"
+                                    class="link-secondary text-white  text-decoration-none">Kaizen Soft Services</a>
+                                <!-- with <span class="text-white">&#9829;</span> -->
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-5 order-0 order-md-1 ">
+                            <div class="social-media-wrapper">
+                                <div
+                                    class="list-unstyled m-0 p-0 d-flex justify-content-center justify-content-center ">
+                                    <button class="btn btn-primary btn-toggle d-lg-none" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#socialIcons" aria-expanded="false"
+                                        aria-controls="socialIcons">
+                                        <i class="fa-solid fa-share-alt"></i>
+                                    </button>
+                                    <!-- Social Media Icons Container -->
+
+                                    <a href="#" class="btn btn-social btn-facebook bounceInRight animated"
+                                        data-animate="bounceInRight">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-social btn-twitter bounceInRight animated"
+                                        data-animate="bounceInRight" data-delay="100">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+
+                                    <a href="#" class="btn btn-social btn-instagram bounceInRight animated"
+                                        data-animate="bounceInRight" data-delay="300">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-social btn-linkedin bounceInRight animated"
+                                        data-animate="bounceInRight">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+
+                                    </a>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </footer>
+
+        <div class="phone">
+            <a href="tel:9028011129" target="_blank" class="phone">
+                <i class="fa fa-phone"></i>
+            </a>
+        </div>
+
+        <div class="whats-app">
+            <a href="https://web.whatsapp.com/send?phone=919028011129&amp;text&amp;app_absent=0" target="_blank"
+                class="whats-app">
+                <i class="fab fa-whatsapp my-float"></i></a>
+        </div>
+        <a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647;"><i
+                class="fas fa-level-up-alt"></i></a>
+
+
+        <!-- jQuery (necessary for FancyBox) -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- Bootstrap Bundle with Popper -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Owl Carousel JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+        <!-- Slick Carousel JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+
+        <!-- Fancybox JS -->
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+
+        <!-- WOW.js JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow.js/1.1.2/wow.min.js"></script>
+
+        <!-- AOS (Animate On Scroll) JS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!-- Vanilla Tilt JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+
+        <!-- Vanilla LazyLoad -->
+        <script async src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@16.1.0/dist/lazyload.min.js"></script>
+
+        <!-- Include Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="./include/script.js"></script>
+        <script>
+            document.querySelector('.kzn-elem-element').classList.add('animate');
+        </script>
+
+        <script>
+            function showContent(tabIndex, element) {
+                // Remove the 'active' class from all tabs
+                const tabs = document.querySelectorAll('.nav-link');
+                tabs.forEach(tab => {
+                    tab.classList.remove('active');
+                });
+
+                // Add the 'active' class to the clicked tab
+                element.classList.add('active');
+
+                // Hide all content sections
+                const sections = document.querySelectorAll('.view-upgrade');
+                sections.forEach(section => {
+                    section.style.display = 'none';
+                });
+
+                // Show the content section corresponding to the clicked tab
+                document.getElementById(tabIndex).style.display = 'block';
+            }
+
+            // Initially hide all sections except the first one
+            document.addEventListener("DOMContentLoaded", function () {
+                const sections = document.querySelectorAll('.view-upgrade');
+                sections.forEach(section => {
+                    section.style.display = 'none';
+                });
+                document.getElementById('1').style.display = 'block';
+            });
+
+
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                // Initialize Swiper
+
+
+                var swiper = new Swiper('.swiper', {
+                    slidesPerView: 1, // Display one card at a time
+                    spaceBetween: 30, // Space between slides
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                    breakpoints: {
+                        640: {
+                            slidesPerView: 1, // Ensure one card per view on small screens
+                        },
+                        768: {
+                            slidesPerView: 2, // For larger screens, adjust as needed
+                        },
+                        1024: {
+                            slidesPerView: 3, // For even larger screens
+                        },
+                    },
+
+                });
+
+                //  var swiperButtonNext = document.querySelector('.swiper-button-next');
+                //     var swiperWrapper = document.querySelector('.swiper-wrapper');
+
+                if (swiperButtonNext && swiperWrapper) {
+                    // Add a click event listener to the button
+                    swiperButtonNext.addEventListener('click', function () {
+                        // Adjust the position and margin-right on click
+                        swiperWrapper.style.transform = 'translate3d(-65px, 0, 0)';
+
+                        slideToHide.style.disolay = 'none';
+                    });
+                }
+                // Add padding to Swiper container
+
+            });
+        </script>
+
+        <script>
+            // Select the button and swiper-wrapper
+
+        </script>
+
+        <!-- below script tag for typed compinies fourth section   -->
+        <!-- <script>
+    // Initialize Swiper
+    var swiper = new Swiper('.swiper', {
+        loop: true, // Enable looping
+        autoplay: {
+            delay: 2000, // Delay between slides (in milliseconds)
+            disableOnInteraction: false, // Continue autoplay even after user interaction
+        },
+        slidesPerView: 'auto', // Display multiple slides at once
+        spaceBetween: 5, // Space between slides
+        speed: 500, // Speed of slide transition
+        // Optional navigation buttons
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+  </script> -->
+
+        <script>
+            document.querySelector('.kzn-elem-element').classList.add('animate');
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const navbar = document.querySelector('.navbar-custom');
+
+                window.addEventListener('scroll', function () {
+                    if (window.scrollY > 50) { // Adjust the scroll distance as needed
+                        navbar.classList.add('sticky-navbar');
+                    } else {
+                        navbar.classList.remove('sticky-navbar');
+                    }
+                });
+            });
+
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const dropdownButton = document.getElementById('branchesDropdown');
+                const dropdownMenu = document.querySelector('#branchesDropdown + .dropdown-menu');
+
+                dropdownButton.addEventListener('click', function () {
+                    const isOpen = dropdownMenu.classList.contains('show');
+                    if (isOpen) {
+                        dropdownMenu.classList.remove('show');
+                    } else {
+                        dropdownMenu.classList.add('show');
+                    }
+                });
+            });
+        </script>
+
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const counters = document.querySelectorAll('.counter');
+
+                counters.forEach(counter => {
+                    counter.innerText = '0';
+
+                    const updateCounter = () => {
+                        const target = +counter.getAttribute('data-target');
+                        const c = +counter.innerText;
+                        const increment = target / 200;
+
+                        if (c < target) {
+                            counter.innerText = `${Math.ceil(c + increment)}`;
+                            setTimeout(updateCounter, 1);
+                        } else {
+                            counter.innerText = target;
+                        }
+                    };
+
+                    const runCounter = () => {
+                        const counterTop = counter.getBoundingClientRect().top;
+                        const screenBottom = window.innerHeight;
+
+                        if (counterTop < screenBottom) {
+                            updateCounter();
+                            window.removeEventListener('scroll', runCounter);
+                        }
+                    };
+
+                    window.addEventListener('scroll', runCounter);
+                    runCounter();
+                });
+            });
+        </script>
+        <!-- <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var swiper = new Swiper('.swiper.test', {
+            slidesPerView: 'auto', // Allow cards to have a fixed width
+            slidesPerGroup: 1,
+            spaceBetween: 45, // Adjust space between cards if needed
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true,
+
+        });
+
+        // Add event listener to the 'Next' button
+        document.querySelector('#my-swiper .swiper-button-next').addEventListener('click', function () {
+            // Apply CSS styles on click
+            document.querySelector('#my-swiper .swiper-wrapper').style.transitionDuration = '0ms';
+            document.querySelector('#my-swiper .swiper-wrapper').style.transform = 'translate3d(3px, 0px, 0px)';
+            document.querySelector('#my-swiper .swiper-wrapper').style.transitionDelay = '0ms';
+        });
+    });
+</script> -->
+
+
+</body>
+
+</html>

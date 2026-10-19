@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper Example</title>
+    <!-- Include Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        .swiper {
+            width: auto;
+            height: 612px;
+            padding: 50px 55px 63px 55px;
+            background: linear-gradient(to bottom, #040479 0, #d9cabf 100%);
+        }
+        
+        .swiper-slide {
+            width: 315px; /* Fixed width for each card */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #eee;
+            border-radius: 8px;
+            padding: 10px;
+            box-sizing: border-box; /* Ensures padding and border are included in the width */
+            transform: translate3d(0, 0, 0); /* Ensure correct transform */
+        }
+        
+        .swiper-pagination {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+
+<section class="section_sixths">
+    <div class="container">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="col-sm-4 col-12 port-col-6-st pb-5 col-lg-4 col-md-4">
+                        <div class="port-img-small box18 isotope_item hover-scale card">
+                            <div class="item-image">
+                                <img loading="lazy" class="img-fluid w-100 course-photo" alt="portfolio" src="assets/img/logo3.jpg">
+                            </div>
+                            <div class="item-image card-body text-center">
+                                <h3 class="h3 main heading">Coaching</h3>
+                                <span class="course-span">12 Courses</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="col-sm-4 col-12 port-col-6-st pb-5 col-lg-4 col-md-4">
+                        <div class="port-img-small box18 isotope_item hover-scale card">
+                            <div class="item-image">
+                                <img loading="lazy" class="img-fluid w-100 course-photo" alt="portfolio" src="assets/img/logo3.jpg">
+                            </div>
+                            <div class="item-image card-body text-center">
+                                <h3 class="h3 main heading">Coaching</h3>
+                                <span class="course-span">12 Courses</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="col-sm-4 col-12 port-col-6-st pb-5 col-lg-4 col-md-4">
+                        <div class="port-img-small box18 isotope_item hover-scale card">
+                            <div class="item-image">
+                                <img loading="lazy" class="img-fluid w-100 course-photo" alt="portfolio" src="assets/img/logo3.jpg">
+                            </div>
+                            <div class="item-image card-body text-center">
+                                <h3 class="h3 main heading">Coaching</h3>
+                                <span class="course-span">12 Courses</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="col-sm-4 col-12 port-col-6-st pb-5 col-lg-4 col-md-4">
+                        <div class="port-img-small box18 isotope_item hover-scale card">
+                            <div class="item-image">
+                                <img loading="lazy" class="img-fluid w-100 course-photo" alt="portfolio" src="assets/img/logo3.jpg">
+                            </div>
+                            <div class="item-image card-body text-center">
+                                <h3 class="h3 main heading">Coaching</h3>
+                                <span class="course-span">12 Courses</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="col-sm-4 col-12 port-col-6-st pb-5 col-lg-4 col-md-4">
+                        <div class="port-img-small box18 isotope_item hover-scale card">
+                            <div class="item-image">
+                                <img loading="lazy" class="img-fluid w-100 course-photo" alt="portfolio" src="assets/img/logo3.jpg">
+                            </div>
+                            <div class="item-image card-body text-center">
+                                <h3 class="h3 main heading">Coaching</h3>
+                                <span class="course-span">12 Courses</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="col-sm-4 col-12 port-col-6-st pb-5 col-lg-4 col-md-4">
+                        <div class="port-img-small box18 isotope_item hover-scale card">
+                            <div class="item-image">
+                                <img loading="lazy" class="img-fluid w-100 course-photo" alt="portfolio" src="assets/img/logo3.jpg">
+                            </div>
+                            <div class="item-image card-body text-center">
+                                <h3 class="h3 main heading">Coaching</h3>
+                                <span class="course-span">12 Courses</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat slides as needed -->
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- Navigation buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Include Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var swiper = new Swiper('.swiper', {
+            slidesPerView: 1, // Display one card at a time
+            spaceBetween: 10, // Adjust spacing between cards
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1, // Ensure one card per view on small screens
+                },
+                768: {
+                    slidesPerView: 2, // For larger screens, adjust as needed
+                },
+                1024: {
+                    slidesPerView: 3, // For even larger screens
+                },
+            },
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="icon" type="image/x-icon" href="./Assets/favicon_io/favicon.ico">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.6.0-web/css/all.min.css">
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
+
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.css" />
+
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../assets/OwlCarousel2-2.3.4/docs_src/assets/css/animate.css">
+
+
+    <!-- WOW.js CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/wow.js/1.1.2/wow.min.css">
+    <link rel="stylesheet" href="../include/sp.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../include/style.css">
+
+    <script src="../include/script.js" defer></script>
+    <style>
+        .kzn-tp-bgimg.defaultimg {
+            background-repeat: no-repeat;
+            background-image: url('../assets/img/background_image.jpg');
+            background-size: cover;
+            background-position: center center;
+            width: 100%;
+            height: 700px;
+            opacity: 1;
+            visibility: inherit;
+            z-index: 20;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar-top navbar-expand-lg fixed-top text-light pt-2">
+
+        <div class="container first-nav">
+            <div class="row w-100  d-flex">
+                <div class=" sptop col-4 col-sm-4 col-lg-6 col-md-6 d-flex  align-items-center justify-content-between">
+                    <!-- Dropdown for branches on small devices -->
+                    <div class="d-lg-none d-md-none text-center  mobview">
+                        <div class="dropdown">
+                            <a class=" top-sm dropdown-toggle" type="button" id="branchesDropdown"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Branches
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="branchesDropdown">
+                                <a class="dropdown-item" href="./index.html">Pune</a>
+                                <a class="dropdown-item" href="./index.html">Mumbai</a>
+                                <a class="dropdown-item" href="./index.html">Thane</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Horizontal list for larger devices -->
+                    <ul class="navbar-list-top d-flex flex-wrap bs d-none  d-md-flex d-lg-flex  ">
+                        <li class="nav-item-top">
+                            <a class="nav-links px-3  px-md-1" aria-current="page">Branches:</a>
+                        </li>
+                        <li class="nav-item-top">
+                            <a class="nav-links px-3  px-md-1" aria-current="page" href="./index.html">Pune</a>
+                        </li>
+                        <li class="nav-item-top">
+                            <a class="nav-links px-3  px-md-1" aria-current="page" href="./index.html">Mumbai</a>
+                        </li>
+                        <li class="nav-item-top">
+                            <a class="nav-links px-3  px-md-1" aria-current="page" href="./index.html">Thane</a>
+                        </li>
+                    </ul>
+
+                    <!-- Additional Dropdowns -->
+
+                </div>
+                <div
+                    class="col-lg-6  col-4  col-sm-8 col-md-6 text-end d-lg-flex  d-md-flex align-items-center justify-content-end tops text-light  px-1">
+                    <p class="p-top sp ">abc192@gmail.com | +91 1234567890</p>
+                    <span class="dropdown mt-2 topbat  d-lg-none d-md-none ">
+
+
+                        <a class="top-sm  px-2 ">
+                            Call
+                        </a>|
+                        <a class=" top-sm px-2">
+                            Services
+                        </a>
+                    </span>
+
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <nav role="navigation" class="navbar navbar-expand-lg navbar-custom fixed-top primary-navigation ">
+        <div class="container nav-main">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/img/logo-corp-red.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" id="navbarbutton" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="../index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./index.html">DEMOS <i
+                                class="fa-solid rotate-icon fa-chevron-right"></i></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./product.html" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PRODUCT <i class="fa-solid rotate-icon fa-chevron-right"></i>
+                        </a>
+                        <div class="dropdown-menu  " id="dropdown-menu " aria-labelledby="dropdownMenuButton">
+
+
+                            <ul class="submenu_list text-center">
+                                <li class="dropdown-title">full stack developer</li>
+                                <li><a class="dropdown-item" href="./chatbot.html">CHATBOT</a></li>
+                                <!-- <li><hr class="dropdown-divider"></li> -->
+                                <li><a class="dropdown-item" href="./kiosk.html">KIOSK</a></li>
+                                <li><a class="dropdown-item" href="./e_learning.html">E-LEARNING</a></li>
+                                <li><a class="dropdown-item" href="./ai_solution.html">AI-SOLUTION</a></li>
+                                <li><a class="dropdown-item" href="./billing.html">BILLING</a></li>
+                            </ul>
+
+                            <ul>
+                                <li class="dropdown-title  text-center">Testing</li>
+                                <li><a class="dropdown-item" href="./chatbot.html">CHATBOT</a></li>
+                                <!-- <li><hr class="dropdown-divider"></li> -->
+                                <li><a class="dropdown-item" href="./kiosk.html">KIOSK</a></li>
+                                <li><a class="dropdown-item" href="./e_learning.html">E-LEARNING</a></li>
+                                <li><a class="dropdown-item" href="./ai_solution.html">AI-SOLUTION</a></li>
+                                <li><a class="dropdown-item" href="./billing.html">BILLING</a></li>
+                            </ul>
+                            <ul>
+                                <li class="dropdown-title text-center">Marketing</li>
+                                <li><a class="dropdown-item" href="./chatbot.html">CHATBOT</a></li>
+                                <!-- <li><hr class="dropdown-divider"></li> -->
+                                <li><a class="dropdown-item" href="./kiosk.html">KIOSK</a></li>
+                                <li><a class="dropdown-item" href="./e_learning.html">E-LEARNING</a></li>
+                                <li><a class="dropdown-item" href="./ai_solution.html">AI-SOLUTION</a></li>
+                                <li><a class="dropdown-item" href="./billing.html">BILLING</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./service.html" id="dropdownMenuButton"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            COURCES<i class="fa-solid rotate-icon fa-chevron-right"></i>
+                        </a>
+                        <ul class="dropdown-menu submenu_list  service" aria-labelledby="dropdownMenuButton">
+
+                            <li class="dropdowns"><a class="dropdown-item  "
+                                    href="./services/cab_booking.html">DEVELOPMENT <i
+                                        class="fa-solid rotate-icons fa-chevron-down"></i></a>
+
+                                <ul class="dropdown-menu sub sp ">
+                                    <li><a class="dropdown-item" href="./chatbot.html">CHATBOT</a></li>
+                                    <!-- <li><hr class="dropdown-divider"></li> -->
+                                    <li><a class="dropdown-item" href="./kiosk.html">KIOSK</a></li>
+                                    <li><a class="dropdown-item" href="./e_learning.html">E-LEARNING</a></li>
+                                    <li><a class="dropdown-item" href="./ai_solution.html">AI-SOLUTION</a></li>
+                                    <li><a class="dropdown-item" href="./billing.html">BILLING</a></li>
+                                </ul>
+
+
+
+
+
+                            </li>
+                            <li><a class="dropdown-item" href="./services/hotel_manage.html">TESTING</a></li>
+                            <!-- <li><hr class="dropdown-divider"></li> -->
+                            <li><a class="dropdown-item" href="./services/school_manage.html">MARKETING</a></li>
+                            <li><a class="dropdown-item" href="./services/tour_manage.html">COMPUTER</a></li>
+                            <li><a class="dropdown-item" href="./services/ind_base_project.html">BUSINESS STUDIES</a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact-us.html">CONTACT</a>
+                        <!-- </li>   <li class="nav-item">
+                        <a class="nav-link" href="#">Ecommerce</a>
+                    </li>   <li class="nav-item">
+                        <a class="nav-link" href="#">Ecommerce</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Section first start -->
+    <div class="kzn-rev_slider_wrapper fullwidthbanner-container" style="overflow: visible; height: 775px;">
+        <div id="kzn-rev-slider1"
+            class="kzn-rev_slider fullwidthabanner revslider-initialised kzn-rev_redraw_on_blurfocus"
+            data-version="5.4.8" style="margin-top: 0px; margin-bottom: 0px; " data-slideactive="rs-245443">
+            <div class="row">
+                <div class="slotholder">
+                    <div class="kzn-tp-bgimg defaultimg img-fluid " data-bgcolor="undefined" src="assets/img/web3.jpg">
+                    </div>
+                </div>
+
+                <div class="kzn-tp-parallax-wrap w-100 container ">
+                    <div class="kzn-tp-loop-wrap">
+                        <div class="kzn-tp-mask-wrap">
+                            <div class="kzn-tp-caption kzn-tp-resizeme font-Poppins font-weight-700  color-fff letter-spaceing-001 not-hover"
+                                data-x="['center','center','center','center']" data-hoffset="['10','10','0','0']"
+                                data-y="['middle','middle','middle','middle']"
+                                data-voffset="['-167','-167','-72','-72']" data-fontsize="['80','80','60','40']"
+                                data-lineheight="['100','100','80','60']" data-width="full" data-height="none"
+                                data-whitespace="normal" data-transform_idle="o:1;"
+                                data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1000"
+                                data-splitin="none" data-splitout="none"
+                                data-textalign="['center','center','center','center']" data-responsive_offset="on"
+                                id="layer-323948768">
+                                Learning Courses Online</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kzn-tp-parallax-wrap w-100 ps container">
+                    <div class="kzn-tp-loop-wrap">
+                        <div class="kzn-tp-mask-wrap">
+                            <div class="kzn-tp-caption kzn-tp-resizeme font-Poppins font-weight-400  color-fff letter-spaceing-001 not-hover"
+                                data-x="['center','center','center','center']" data-hoffset="['10','10','0','0']"
+                                data-y="['middle','middle','middle','middle']" data-voffset="['-36','-36','14','14']"
+                                data-fontsize="['20','20','18','15']" data-lineheight="['35','35','30','30']"
+                                data-width="full" data-height="none" data-whitespace="normal" data-transform_idle="o:1;"
+                                data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                                data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
+                                data-mask_in="x:0px;y:[100%];" data-mask_out="x:inherit;y:inherit;" data-start="1500"
+                                data-splitin="none" data-splitout="none"
+                                data-textalign="['center','center','center','center']" data-responsive_offset="on"
+                                id="layer-451987120">
+                                Find your course and start learning.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kzn-tp-parallax-wrap mt-2">
+
+
+
+                    <div class=" container vtop ">
+                        <div class="row  d-flex">
+
+                            <div class="  col-lg-4 col-6 col-md-4 col-sm-4  elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-26a5f79"
+                                data-id="26a5f79" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-dfe6d05 iconbox-text-left elementor-widget elementor-widget-thim-icon-box"
+                                        data-id="dfe6d05" data-element_type="widget"
+                                        data-widget_type="thim-icon-box.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="thim-widget-icon-box">
+                                                <div class="wrapper-box-icon text-left overlay">
+                                                    <div class="smicon-box iconbox-left">
+                                                        <div class="boxes-icon">
+                                                            <span class="inner-icon" data-aos="zoom-in-down">
+                                                                <span class="icon">
+                                                                    <i class="fas fa-home"></i>
+                                                                    <!-- <img src="assets/img/icon-5.png" alt=""></span> -->
+                                                        </div>
+                                                        <div class="content-inner">
+                                                            <div class="sc-heading">
+                                                                <h3 class="heading__primary text-white">Best
+                                                                    Industry
+                                                                    Leaders</h3>
+                                                            </div><a class="smicon-read sc-btn"
+                                                                href="https://eduma.thimpress.com/demo-main/about-us/">View
+                                                                More <i class="fa fa-chevron-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-4  col-6 col-md-4 col-sm-4  elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-26a5f79"
+                                data-id="26a5f79" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-dfe6d05 iconbox-text-left elementor-widget elementor-widget-thim-icon-box"
+                                        data-id="dfe6d05" data-element_type="widget"
+                                        data-widget_type="thim-icon-box.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="thim-widget-icon-box">
+                                                <div class="wrapper-box-icon text-left overlay">
+                                                    <div class="smicon-box iconbox-left">
+                                                        <div class="boxes-icon">
+                                                            <span class="inner-icon" data-aos="zoom-in-down">
+                                                                <span class="icon">
+                                                                    <i class="fas fa-home"></i>
+                                                                    <!-- <img src="assets/img/icon-5.png" alt=""></span> -->
+                                                        </div>
+                                                        <div class="content-inner">
+                                                            <div class="sc-heading">
+                                                                <h3 class="heading__primary text-white">Best
+                                                                    Industry
+                                                                    Leaders</h3>
+                                                            </div><a class="smicon-read sc-btn"
+                                                                href="https://eduma.thimpress.com/demo-main/about-us/">View
+                                                                More <i class="fa fa-chevron-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-4  col-6 col-md-4 col-sm-4  elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-26a5f79"
+                                data-id="26a5f79" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-dfe6d05 iconbox-text-left elementor-widget elementor-widget-thim-icon-box"
+                                        data-id="dfe6d05" data-element_type="widget"
+                                        data-widget_type="thim-icon-box.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="thim-widget-icon-box">
+                                                <div class="wrapper-box-icon text-left overlay">
+                                                    <div class="smicon-box iconbox-left">
+                                                        <div class="boxes-icon">
+                                                            <span class="inner-icon" data-aos="zoom-in-down">
+                                                                <span class="icon">
+                                                                    <i class="fas fa-home"></i>
+                                                                    <!-- <img src="assets/img/icon-5.png" alt=""></span> -->
+                                                        </div>
+                                                        <div class="content-inner">
+                                                            <div class="sc-heading">
+                                                                <h3 class="heading__primary text-white">Best
+                                                                    Industry
+                                                                    Leaders</h3>
+                                                            </div><a class="smicon-read sc-btn"
+                                                                href="https://eduma.thimpress.com/demo-main/about-us/">View
+                                                                More <i class="fa fa-chevron-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row vtop">
+                        <div class=" container d-flex d-lg-none d-sm-none d-md-none d-flex">
+
+
+                            <div class="  col-lg-4 col-6 col-md-4 col-sm-4  elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-26a5f79"
+                                data-id="26a5f79" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-dfe6d05 iconbox-text-left elementor-widget elementor-widget-thim-icon-box"
+                                        data-id="dfe6d05" data-element_type="widget"
+                                        data-widget_type="thim-icon-box.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="thim-widget-icon-box">
+                                                <div class="wrapper-box-icon text-left overlay">
+                                                    <div class="smicon-box iconbox-left">
+                                                        <div class="boxes-icon">
+                                                            <span class="inner-icon" data-aos="zoom-in-down">
+                                                                <span class="icon">
+                                                                    <i class="fas fa-home"></i>
+                                                                    <!-- <img src="assets/img/icon-5.png" alt=""></span> -->
+                                                        </div>
+                                                        <div class="content-inner">
+                                                            <div class="sc-heading">
+                                                                <h3 class="heading__primary text-white">Best
+                                                                    Industry
+                                                                    Leaders</h3>
+                                                            </div><a class="smicon-read sc-btn"
+                                                                href="https://eduma.thimpress.com/demo-main/about-us/">View
+                                                                More <i class="fa fa-chevron-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-lg-4  col-6 col-md-4 col-sm-4  elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-26a5f79"
+                                data-id="26a5f79" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-dfe6d05 iconbox-text-left elementor-widget elementor-widget-thim-icon-box"
+                                        data-id="dfe6d05" data-element_type="widget"
+                                        data-widget_type="thim-icon-box.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="thim-widget-icon-box">
+                                                <div class="wrapper-box-icon text-left overlay">
+                                                    <div class="smicon-box iconbox-left">
+                                                        <div class="boxes-icon">
+                                                            <span class="inner-icon" data-aos="zoom-in-down">
+                                                                <span class="icon">
+                                                                    <i class="fas fa-home"></i>
+                                                                    <!-- <img src="assets/img/icon-5.png" alt=""></span> -->
+                                                        </div>
+                                                        <div class="content-inner">
+                                                            <div class="sc-heading">
+                                                                <h3 class="heading__primary text-white">Best
+                                                                    Industry
+                                                                    Leaders</h3>
+                                                            </div><a class="smicon-read sc-btn"
+                                                                href="https://eduma.thimpress.com/demo-main/about-us/">View
+                                                                More <i class="fa fa-chevron-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="container text-center d-flex d-lg-none d-sm-none d-md-none">
+                            <div class="  col-lg-4  col-6 col-md-4 col-sm-4  elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-26a5f79"
+                                data-id="26a5f79" data-element_type="column">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-dfe6d05 iconbox-text-left elementor-widget elementor-widget-thim-icon-box"
+                                        data-id="dfe6d05" data-element_type="widget"
+                                        data-widget_type="thim-icon-box.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="thim-widget-icon-box">
+                                                <div class="wrapper-box-icon text-left overlay">
+                                                    <div class="smicon-box iconbox-left">
+                                                        <div class="boxes-icon">
+                                                            <span class="inner-icon" data-aos="zoom-in-down">
+                                                                <span class="icon">
+                                                                    <i class="fas fa-home"></i>
+                                                                    <!-- <img src="assets/img/icon-5.png" alt=""></span> -->
+                                                        </div>
+                                                        <div class="content-inner">
+                                                            <div class="sc-heading">
+                                                                <h3 class="heading__primary text-white">Best
+                                                                    Industry
+                                                                    Leaders</h3>
+                                                            </div><a class="smicon-read sc-btn"
+                                                                href="https://eduma.thimpress.com/demo-main/about-us/">View
+                                                                More <i class="fa fa-chevron-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- section third start ------------------------------------------- -->
+
+    <style>
+        .threes {
+            border: 1px solid black;
+
+        }
+
+        .services .card-title {
+            border: none;
+            font-weight: 700;
+            font-size: 53px;
+            padding-top: 33px;
+            padding-bottom: 16px;
+        }
+
+        .services {
+            background-color: white;
+            border: none
+        }
+
+        .services span.ps {
+            color: #3498db;
+
+
+        }
+
+        .btn-main.bg-primary {
+            background-color: #3498db;
+            visibility: visible;
+            animation-delay: 0.8s;
+            animation-name: fadeIn;
+            height: 50px;
+            padding-top: 10px;
+            border-radius: 6px;
+            font-size: 20px;
+
+        }
+
+        .card.service {
+            border: none;
+        }
+    </style>
+
+    <div class="container col-12  d-flex  threes">
+
+        <div class="col-lg-6 col-md-6  px-3  ">
+            <div class="card service">
+                <div class=" services   w-100 p-3 ">
+                    <h3 class="card-title h3 "> First Education Theme For <span class="ps">Marketplace </span> </h3>
+                    <p class="card-text p  "> This will be the best place for anyone to sell courses online, with all
+                        the necessary eCommerce features. This is Eduma - Education WordPress Theme. </p>
+                    <a href="javascript:;" data-aos="zoom-in-up"
+                        class="btn-main bg-primary   lnk wow fadeIn popup_open aos-init aos-animate"
+                        onclick="order_now_value(this)" name="for $244" data-wow-delay="0.8s">Start Coaching <i
+                            class="fa-solid fa-chevron-right"></i>
+                        <span class="circle"></span>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class=" col-lg-6 col-md-6   px-3 ">
+            <div class="card">
+                <img class="img-fluid p-3" src="../assets/img/web_application.jpeg" alt="imgname">
+
+            </div>
+
+        </div>
+    </div>
+    <!-- section fourth start ------------------------------------------- -->
+    <section class="section_third price text-center">
+        <div class="container team-sektion paddingTB60">
+            <div class="row">
+                <div class="site-heading text-center text-white" data-aos="zoom-in-down">
+                    <h2 class="mb0 bold fs-1 pt-5">Popular Course​ </h2>
+                    <p>Limitless learning, more possibilities
+
+                        <br> ut labore et dolore magna aliqua. Ut enim ad minim
+                    </p>
+                    <div class="border"></div>
+                </div>
+            </div>
+
+
+            <div class=" row justify-content-center">
+                <!-- Bronze Plan -->
+                <div class="col-md-3 col-lg-3 col-sm-6 col-12 mb-4">
+                    <div class="team-box p-3 text-left">
+                        <div class="team-img thumbnail card  price">
+                            <div class="price-box ">
+                                <div class="card-head">
+                                    <img src="assets/img/web3.png" class="img-fluid mb-3 w-100" alt="Bronze Plan">
+                                    <h3 class="course-heading">Master Deploma in Full Stack Java and froend end</h3>
+                                </div>
+                                <hr class="hr line">
+                                <div class="details corp">
+                                    <h5 class="duration course">Duration: <small>5 months </small> </h5>
+                                    <span class="sp course  duration course text-left">
+                                        <i class="fa-regular fa-clock"></i> <small> 748 hours</small></span>
+                                    <p class="course desc">Own your future learning new skills online ut labore et
+                                        dolore magna aliqua.</p>
+
+
+                                </div>
+                                <a href="javascript:;" class="btn btn-main bg-btn lnk animated pulse-button-bounce"
+                                    onclick="order_now_value(this)">Start Learning <i
+                                        class="fa-solid fa-caret-right"></i> <span class="circle"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-6 col-12 mb-4">
+                    <div class="team-box p-3 text-left">
+                        <div class="team-img thumbnail card  price">
+                            <div class="price-box ">
+                                <div class="card-head">
+                                    <img src="assets/img/web3.png" class="img-fluid mb-3 w-100" alt="Bronze Plan">
+                                    <h3 class="course-heading">Master Deploma in Full Stack Java and froend end</h3>
+                                </div>
+                                <hr class="hr line">
+                                <div class="details corp">
+                                    <h5 class="duration course">Duration: <small>5 months </small> </h5>
+                                    <span class="sp course  duration course text-left">
+                                        <i class="fa-regular fa-clock"></i> <small> 748 hours</small></span>
+                                    <p class="course desc">Own your future learning new skills online ut labore et
+                                        dolore magna aliqua.</p>
+
+
+                                </div>
+                                <a href="javascript:;" class="btn btn-main bg-btn lnk animated pulse-button-bounce"
+                                    onclick="order_now_value(this)">Start Learning <i
+                                        class="fa-solid fa-caret-right"></i> <span class="circle"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-6 col-12 mb-4">
+                    <div class="team-box p-3 text-left">
+                        <div class="team-img thumbnail card  price">
+                            <div class="price-box ">
+                                <div class="card-head">
+                                    <img src="assets/img/web3.png" class="img-fluid mb-3 w-100" alt="Bronze Plan">
+                                    <h3 class="course-heading">Master Deploma in Full Stack Java and froend end</h3>
+                                </div>
+                                <hr class="hr line">
+                                <div class="details corp">
+                                    <h5 class="duration course">Duration: <small>5 months </small> </h5>
+                                    <span class="sp course  duration course text-left">
+                                        <i class="fa-regular fa-clock"></i> <small> 748 hours</small></span>
+                                    <p class="course desc">Own your future learning new skills online ut labore et
+                                        dolore magna aliqua.</p>
+
+
+                                </div>
+                                <a href="javascript:;" class="btn btn-main bg-btn lnk animated pulse-button-bounce"
+                                    onclick="order_now_value(this)">Start Learning <i
+                                        class="fa-solid fa-caret-right"></i> <span class="circle"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-3 col-sm-6 col-12 mb-4">
+                    <div class="team-box p-3 text-left">
+                        <div class="team-img thumbnail card  price">
+                            <div class="price-box ">
+                                <div class="card-head">
+                                    <img src="assets/img/web3.png" class="img-fluid mb-3 w-100" alt="Bronze Plan">
+                                    <h3 class="course-heading">Master Deploma in Full Stack Java and froend end</h3>
+                                </div>
+                                <hr class="hr line">
+                                <div class="details corp">
+                                    <h5 class="duration course">Duration: <small>5 months </small> </h5>
+                                    <span class="sp course  duration course text-left">
+                                        <i class="fa-regular fa-clock"></i> <small> 748 hours</small></span>
+                                    <p class="course desc">Own your future learning new skills online ut labore et
+                                        dolore magna aliqua.</p>
+
+
+                                </div>
+                                <a href="javascript:;" class="btn btn-main bg-btn lnk animated pulse-button-bounce"
+                                    onclick="order_now_value(this)">Start Learning <i
+                                        class="fa-solid fa-caret-right"></i> <span class="circle"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        </div>
+    </section>
+
+
+    <!-- section fourth start ------------------------------------------- -->
+
+
+    <style>
+
+    </style>
+    <div class="custom-container">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-md-12 ">
+                    <h1 class="custom-title top">GET CERTIFIED BY INDUSTRY RECOGNISED
+                        <span class="custom-subtitle">'ADVANCE DEPLOMA IN FULL STACK JAVA' </span> CERTIFICATE
+                    </h1>
+                    <p class="custom-content px-1">TCA Certification is ascribed by all major Global Companies around
+                        the world. We provide after conclusion of
+                        the theoretical and practical sessions to fresher's as well as corporate trainees. Our
+                        certification at TCA is accredited worldwide.
+                        It proliferations
+                        the value of your resume and you can attain leading job posts with the help of this
+                        certification in leading MNC's of the world.</p>
+
+                    <div class="custom-row col-12 d-flex">
+                        <div class="col-1">
+                            <div class="d-flex  rounded-circle custom-rounded-icon p-3">
+
+                                <i class="fa-solid fa-paper-plane" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                                    data-aos-duration="2000" alt="Website Mockup"></i>
+
+                            </div>
+                        </div>
+                        <div class="col-10  text-left align-items-left  px-md-5">
+                            <h4 class=" mb-2 "> Earn your certificate</h4>
+                            <p class="custom-content">Our Certified JAVA Training course is exhaustive and this JAVA
+                                certification is proof
+                                that you have taken a big leap in mastering the domain.</p>
+                        </div>
+                    </div>
+
+                    <div class="custom-row  d-flex">
+                        <div class="col-1">
+                            <div class="d-flex  rounded-circle custom-rounded-icon p-3">
+                                <i class="fa-solid fa-paper-plane" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                                    data-aos-duration="2000" alt="Website Mockup"></i>
+
+                            </div>
+                        </div>
+                        <div class="col-11 text-left align-items-left   px-md-5">
+                            <h4 class=" mb-2"> Differentiate yourself with a TCA Certification</h4>
+                            <p class="custom-content">The practical knowledge and actionable skillset you've gained
+                                working on projects, simulations,
+                                case studies will set you ahead of the competition.</p>
+                        </div>
+                    </div>
+
+                    <div class="custom-row mb-4 d-flex">
+                        <div class="col-1">
+                            <div
+                                class="d-flex justify-content-center align-items-center rounded-circle custom-rounded-icon p-3">
+                                <i class="fa-solid fa-paper-plane" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                                    data-aos-duration="2000" alt="Website Mockup"></i>
+
+                            </div>
+                        </div>
+                        <div class="col-10 text-left align-items-left    px-md-5 ">
+                            <h4 class=" mb-2">Share your achievement</h4>
+                            <p class="custom-content">Talk about it on Linkedin, Whatsapp, Instagram, Facebook, Twitter
+                                boost your resume or
+                                frame it - tell your friends and colleagues about it.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 ">
+                    <div class="custom-image-container bg-test wow  fadeInUp" data-tilt="" data-tilt-max="5"
+                        data-tilt-speed="1000" data-wow-delay=".6s">
+                        <img src="../assets/img/web3.png" class="custom-image img-fluid rounded " data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic" data-aos-duration="2000" alt="Website Mockup">
+                    </div>
+                    <div class="mt-5 text-center">
+                        <h2 class="custom-display-5  mb-3">be java certified</h2>
+                        <p class="custom-lead mb-10 ">Choose The Weblogy Proven to Drive Growth.</p>
+                        <a href="#" class="custom-call-to-action">Get Certified &gt;</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <!-- section fifth start --------------------------------------------------------------------- -->
+
+
+    <style>
+        .inement .test-reviews {
+            padding-top: -1px;
+            /* border-top-left-radius: 22%; */
+            border-top-right-radius: 15%;
+            border-bottom-left-radius: 15%;
+            border: 1px solid black;
+            overflow: hidden;
+        }
+
+        .carousel-item img.test-reviews {
+            margin-top: -10px;
+            width: 100%;
+            transition: transform 0.6s ease;
+            height: auto;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+        .row.reviews {
+            height: 415px;
+            border: 1px solid #270707;
+            box-sizing: border-box;
+            background: #192836;
+            margin-right: 7%;
+            margin-left: 7%;
+            border-radius: 2%;
+        }
+
+        .carousel-control-prev-icon.ps,
+        .carousel-control-next-icon.ps {
+            height: 9%;
+            width: 61%;
+            background-color: #040935;
+            border-radius: 19%;
+            color: #fff;
+            opacity: 1;
+        }
+    </style>
+    <div class="container mb-3">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="row  text-center justify-content-center reviews text-dark bg-white ">
+
+                        <div class="col-lg-6 col-md-6  inement  ">
+                            <div class="text-left"> </div>
+
+                            I recently completed the Java Developer course, and I’m excited to share my experience.
+                            Overall, the course provided a comprehensive introduction to Java programming and equipped
+                            me with valuable skills.
+
+
+                            <!-- Social Media Icons Container -->
+                            <div class="text-center">
+                                <h4 href="#" class="btn btn-social bounceInRight animated" data-animate="bounceInRight">
+
+                                </h4>
+
+                                <span class="h5"> software developer at sp technology</span>
+                            </div>
+
+
+
+
+
+                        </div>
+                        <div class="col-lg-4 col-md-4   inement ">
+                            <img src="../assets/img/android.jpeg" class="d-block w-100 test-reviews"
+                                alt="Slider Image 1">
+                            <h3 class="h3 pt-2"> Rutwik Patil</h3>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row  text-center justify-content-center reviews text-dark bg-white ">
+
+                        <div class="col-lg-6 col-md-6  inement  ">
+                            <div class="text-left"> </div>
+
+                            I recently completed the Java Developer course, and I’m excited to share my experience.
+                            Overall, the course provided a comprehensive introduction to Java programming and equipped
+                            me with valuable skills.
+
+
+                            <!-- Social Media Icons Container -->
+                            <div class="text-center">
+                                <h4 href="#" class="btn btn-social bounceInRight animated" data-animate="bounceInRight">
+
+                                </h4>
+
+                                <span class="h5"> software developer at sp technology</span>
+                            </div>
+
+
+
+
+
+                        </div>
+                        <div class="col-lg-4 col-md-4   inement ">
+                            <img src="../assets/img/android.jpeg" class="d-block w-100 test-reviews"
+                                alt="Slider Image 1">
+                            <h3 class="h3 pt-2"> Rutwik Patil</h3>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row  text-center justify-content-center reviews text-dark bg-white ">
+
+                        <div class="col-lg-6 col-md-6  inement  ">
+                            <div class="text-left"> </div>
+
+                            I recently completed the Java Developer course, and I’m excited to share my experience.
+                            Overall, the course provided a comprehensive introduction to Java programming and equipped
+                            me with valuable skills.
+
+
+                            <!-- Social Media Icons Container -->
+                            <div class="text-center">
+                                <h4 href="#" class="btn btn-social bounceInRight animated" data-animate="bounceInRight">
+
+                                </h4>
+
+                                <span class="h5"> software developer at sp technology</span>
+                            </div>
+
+
+
+
+
+                        </div>
+                        <div class="col-lg-4 col-md-4   inement ">
+                            <img src="../assets/img/android.jpeg" class="d-block w-100 test-reviews"
+                                alt="Slider Image 1">
+                            <h3 class="h3 pt-2"> Rutwik Patil</h3>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon ps" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon ps" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+ <!-- section fifth start --------------------------------------------------------------------- -->
+
+
+<style>
+   .btn-main.btn-mains {
+    color: white;
+    text-decoration: none;
+    /* margin-left: 20%; */
+    width: 32px;
+    height: 60px;
+    align-items: center;
+    padding-top: 1px;
+    font-size: 40px;
+    padding-left: 21px;
+    padding-right: 48px;
+    /* background-color: #141313; */
+    background-color:darkmagenta;
+    margin-left: 41%;
+    margin-top: -28px;
+    overflow: visible;
+
+}
+
+.card-head {
+    width: 100%;
+   background: white;
+    color: #000;
+}
+    .card.corsedet {
+        /* background: white; */
+        background: #baacac63;
+        overflow: visible;
+        height: auto;
+        border: none;
+        
+    
+    }
+</style>
+    <section class=" py-2">
+   
+            <div class="text-visa container">
+                <h2 class="h2 titles">Roadmap for Student</h2>
+            </div>
+
+            <div class="d-md-flex d-lg-flex   wrapcard   container">
+                <div class=" card2_1 col-lg-4 col-md-4 col-sm-4 col-12 hover14">
+                    
+                    <div class="card corsedet text-center ">
+                        <a href="javascript:;" data-aos="zoom-in-up"
+                        class="btn-main btn-mains  lnk wow fadeIn popup_open aos-init aos-animate"
+                        onclick="order_now_value(this)" name="for $244" data-wow-delay="0.8s">1 
+                        <span class="circle"></span>
+                    </a> 
+                        <!-- <div class="card-head text-center bg-none">
+                            <img loading="lazy" class="img-fluid   course-photo " alt="portfolio"
+                                src="../assets/img/icon-5.png">
+                        </div> -->
+                        <div class="card-body">
+                            <div class="card-title ps"> Attend java Training
+
+                            </div>
+                            <p class="visa-type">Learn from industries best trainers to get dream your JOBS. We Deliver 100%
+                                 Practical-based training to enable you become industry ready professional..
+                            </p>
+
+
+
+                          
+                        </div>
+
+                    </div>
+                </div>
+                <div class=" card2_1 col-lg-4 col-md-4 col-sm-4 col-12 hover14">
+                    <div class="card corsedet text-center ">
+                        <a href="javascript:;" data-aos="zoom-in-up"
+                        class="btn-main btn-mains  lnk wow fadeIn popup_open aos-init aos-animate"
+                        onclick="order_now_value(this)" name="for $244" data-wow-delay="0.8s">2
+                        <span class="circle"></span>
+                    </a> 
+                        <!-- <div class="card-head text-center bg-none">
+                            <img loading="lazy" class="img-fluid   course-photo " alt="portfolio"
+                                src="../assets/img/icon-5.png">
+                        </div> -->
+                        <div class="card-body">
+                            <div class="card-title ps">Deliver Projects Assigned & Earn Training Certification 
+
+                            </div>
+                            <p class="visa-type">Learn from industries best trainers to get dream your JOBS. We Deliver 100%
+                                 Practical-based training to enable you become industry ready professional..
+                            </p>
+
+
+
+                          
+                        </div>
+
+                    </div>
+                </div>
+                <div class=" card2_1 col-lg-4 col-md-4 col-sm-4 col-12 hover14">
+                    <div class="card corsedet text-center ">
+                        <a href="javascript:;" data-aos="zoom-in-up"
+                        class="btn-main btn-mains  lnk wow fadeIn popup_open aos-init aos-animate"
+                        onclick="order_now_value(this)" name="for $244" data-wow-delay="0.8s">3
+                        <span class="circle"></span>
+                    </a> 
+                        <!-- <div class="card-head text-center bg-none">
+                            <img loading="lazy" class="img-fluid   course-photo " alt="portfolio"
+                                src="../assets/img/icon-5.png">
+                        </div> -->
+                        <div class="card-body">
+                            <div class="card-title ps"> Get Placed in TOP IT Compinies
+
+                            </div>
+                            <p class="visa-type">Learn from industries best trainers to get dream your JOBS. We Deliver 100%
+                                 Practical-based training to enable you become industry ready professional..
+                            </p>
+
+
+
+                          
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+           
+            <!-- FAQ -->
+
+       
+
+
+    </section>
+
+    <!-- footer start ------------------------------------------- -->
+    <footer class="footer">
+
+
+        <section class=" py-4 py-md-5 py-xl-8 border-top border-light " style="background-color:#141313">
+            <div class="container overflow-hidden">
+                <div class="row gy-4 gy-lg-0 justify-content-xl-between">
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+                        <div class="widget">
+                            <a class="brand" href="index.php"><img class="brand-logo-light logo_light img-fluid"
+                                    src="../assets/img/logo-corp-red.png" alt=""></a>
+                            <p class="mb-2 mt-3">Kaizen softservices vision is to be the leading provider of
+                                affordable and
+                                sustainable tourism experiences in Dubai and around the world.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+                        <div class="widget">
+                            <h4 class="widget-title mb-4">kaizensoftservices</h4>
+                            <address class="mb-4">swargate, pune, maharashtra, india</address>
+                            <p class="mb-1">
+                                <a class=" text-decoration-none a-change" href="tel:+15057922430">+91 1234567890</a>
+                            </p>
+                            <p class="mb-0">
+                                <a class=" text-decoration-none a-change"
+                                    href="mailto:demo@yourdomain.com">abc@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+                        <div class="widget">
+                            <h4 class="widget-title mb-4">Learn More</h4>
+                            <ul class="list-unstyled ">
+                                <li class="mb-2">
+                                    <a href="#!" class="text-decoration-none a-change ">About</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#!" class=" text-decoration-none a-change">Contact</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#!" class=" text-decoration-none a-change">Advertise</a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#!" class=" text-decoration-none a-change">Terms of Service</a>
+                                </li>
+                                <li class="mb-0">
+                                    <a href="#!" class=" text-decoration-none a-change">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-xl-4">
+                        <div class="widget">
+                            <h4 class="widget-title mb-4">Our Newsletter</h4>
+                            <p class="mb-4">Subscribe to our newsletter to get our news & discounts delivered to
+                                you.
+                            </p>
+                            <form action="#!">
+                                <div class="row gy-4">
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="email-newsletter-addon">
+                                                <i class="bi bi-envelope fs-3"></i>
+                                            </span>
+                                            <input type="email" class="form-control" id="email-newsletter" value=""
+                                                placeholder="Email Address" aria-label="email-newsletter"
+                                                aria-describedby="email-newsletter-addon" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="d-grid">
+                                            <button class="btn btn-primary" type="submit">submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Copyright - Bootstrap Brain Component -->
+        <div class="py-2 py-md-3 py-xl-8 border-top border-light-subtle" style="background-color: black">
+            <div class="container overflow-hidden">
+                <div class="row gy-4 gy-md-0 align-items-md-center">
+                    <div class="col-xs-12 col-md-7 order-1 order-md-0">
+                        <div class="copyright text-white text-md-start">
+                            &copy; 2024. All Rights Reserved.
+                        </div>
+                        <div class="credits text-white text-center text-md-start mt-2 ">
+                            Powerd by <a href="https://kaizensoftservices.com/"
+                                class="link-secondary text-white  text-decoration-none">Kaizen Soft Services</a>
+                            <!-- with <span class="text-white">&#9829;</span> -->
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-md-5 order-0 order-md-1 ">
+                        <div class="social-media-wrapper">
+                            <div class="list-unstyled m-0 p-0 d-flex justify-content-center justify-content-center ">
+                                <button class="btn btn-primary btn-toggle d-lg-none" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#socialIcons" aria-expanded="false"
+                                    aria-controls="socialIcons">
+                                    <i class="fa-solid fa-share-alt"></i>
+                                </button>
+                                <!-- Social Media Icons Container -->
+
+                                <a href="#" class="btn btn-social btn-facebook bounceInRight animated"
+                                    data-animate="bounceInRight">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="btn btn-social btn-twitter bounceInRight animated"
+                                    data-animate="bounceInRight" data-delay="100">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+
+                                <a href="#" class="btn btn-social btn-instagram bounceInRight animated"
+                                    data-animate="bounceInRight" data-delay="300">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="#" class="btn btn-social btn-linkedin bounceInRight animated"
+                                    data-animate="bounceInRight">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+
+                                </a>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </footer>
+
+    <div class="phone">
+        <a href="tel:9028011129" target="_blank" class="phone">
+            <i class="fa fa-phone"></i>
+        </a>
+    </div>
+
+    <div class="whats-app">
+        <a href="https://web.whatsapp.com/send?phone=919028011129&amp;text&amp;app_absent=0" target="_blank"
+            class="whats-app">
+            <i class="fab fa-whatsapp my-float"></i></a>
+    </div>
+    <a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647;"><i class="fas fa-level-up-alt"></i></a>
+
+
+    <!-- jQuery (necessary for FancyBox) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Slick Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+
+    <!-- Fancybox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+
+    <!-- WOW.js JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow.js/1.1.2/wow.min.js"></script>
+
+    <!-- AOS (Animate On Scroll) JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Vanilla Tilt JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+
+    <!-- Vanilla LazyLoad -->
+    <script async src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@16.1.0/dist/lazyload.min.js"></script>
+
+    <!-- Include Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../include/script.js"></script>
+
+    <script>
+        function showContent(tabIndex, element) {
+            // Remove the 'active' class from all tabs
+            const tabs = document.querySelectorAll('.nav-link');
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // Add the 'active' class to the clicked tab
+            element.classList.add('active');
+
+            // Hide all content sections
+            const sections = document.querySelectorAll('.view-upgrade');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Show the content section corresponding to the clicked tab
+            document.getElementById(tabIndex).style.display = 'block';
+        }
+
+        // Initially hide all sections except the first one
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll('.view-upgrade');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById('1').style.display = 'block';
+        });
+
+
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize Swiper
+
+
+            var swiper = new Swiper('.swiper', {
+                slidesPerView: 1, // Display one card at a time
+                spaceBetween: 30, // Space between slides
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 1, // Ensure one card per view on small screens
+                    },
+                    768: {
+                        slidesPerView: 2, // For larger screens, adjust as needed
+                    },
+                    1024: {
+                        slidesPerView: 3, // For even larger screens
+                    },
+                },
+
+            });
+
+            //  var swiperButtonNext = document.querySelector('.swiper-button-next');
+            //     var swiperWrapper = document.querySelector('.swiper-wrapper');
+
+            if (swiperButtonNext && swiperWrapper) {
+                // Add a click event listener to the button
+                swiperButtonNext.addEventListener('click', function () {
+                    // Adjust the position and margin-right on click
+                    swiperWrapper.style.transform = 'translate3d(-65px, 0, 0)';
+
+                    slideToHide.style.disolay = 'none';
+                });
+            }
+            // Add padding to Swiper container
+
+        });
+    </script>
+
+    <script>
+        // Select the button and swiper-wrapper
+
+    </script>
+
+    <!-- below script tag for typed compinies fourth section   -->
+    <!-- <script>
+    // Initialize Swiper
+    var swiper = new Swiper('.swiper', {
+        loop: true, // Enable looping
+        autoplay: {
+            delay: 2000, // Delay between slides (in milliseconds)
+            disableOnInteraction: false, // Continue autoplay even after user interaction
+        },
+        slidesPerView: 'auto', // Display multiple slides at once
+        spaceBetween: 5, // Space between slides
+        speed: 500, // Speed of slide transition
+        // Optional navigation buttons
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+  </script> -->
+
+    <script>
+        document.querySelector('.kzn-elem-element').classList.add('animate');
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navbar = document.querySelector('.navbar-custom');
+
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 50) { // Adjust the scroll distance as needed
+                    navbar.classList.add('sticky-navbar');
+                } else {
+                    navbar.classList.remove('sticky-navbar');
+                }
+            });
+        });
+
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const dropdownButton = document.getElementById('branchesDropdown');
+            const dropdownMenu = document.querySelector('#branchesDropdown + .dropdown-menu');
+
+            dropdownButton.addEventListener('click', function () {
+                const isOpen = dropdownMenu.classList.contains('show');
+                if (isOpen) {
+                    dropdownMenu.classList.remove('show');
+                } else {
+                    dropdownMenu.classList.add('show');
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const counters = document.querySelectorAll('.counter');
+
+            counters.forEach(counter => {
+                counter.innerText = '0';
+
+                const updateCounter = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const c = +counter.innerText;
+                    const increment = target / 200;
+
+                    if (c < target) {
+                        counter.innerText = `${Math.ceil(c + increment)}`;
+                        setTimeout(updateCounter, 1);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+
+                const runCounter = () => {
+                    const counterTop = counter.getBoundingClientRect().top;
+                    const screenBottom = window.innerHeight;
+
+                    if (counterTop < screenBottom) {
+                        updateCounter();
+                        window.removeEventListener('scroll', runCounter);
+                    }
+                };
+
+                window.addEventListener('scroll', runCounter);
+                runCounter();
+            });
+        });
+    </script>
+    <!-- <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var swiper = new Swiper('.swiper.test', {
+            slidesPerView: 'auto', // Allow cards to have a fixed width
+            slidesPerGroup: 1,
+            spaceBetween: 45, // Adjust space between cards if needed
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true,
+
+        });
+
+        // Add event listener to the 'Next' button
+        document.querySelector('#my-swiper .swiper-button-next').addEventListener('click', function () {
+            // Apply CSS styles on click
+            document.querySelector('#my-swiper .swiper-wrapper').style.transitionDuration = '0ms';
+            document.querySelector('#my-swiper .swiper-wrapper').style.transform = 'translate3d(3px, 0px, 0px)';
+            document.querySelector('#my-swiper .swiper-wrapper').style.transitionDelay = '0ms';
+        });
+    });
+</script> -->
+
+
+</body>
+
+</html>

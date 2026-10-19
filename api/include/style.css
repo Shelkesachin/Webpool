@@ -1,0 +1,921 @@
+
+/* =====================================
+   KZN RESPONSIVE NAVBAR
+===================================== */
+
+:root {
+    --kzn-nav-primary: #e53935;
+    --kzn-nav-text: #222222;
+    --kzn-nav-bg: #ffffff;
+    --kzn-nav-height: 82px;
+}
+
+/* Navbar */
+.navbar-custom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+    min-height: var(--kzn-nav-height);
+    padding: 10px 0;
+    background: var(--kzn-nav-bg);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.07);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Navbar container */
+.navbar-custom .nav-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.navbar-custom .navbar-brand {
+    display: inline-flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.navbar-custom .navbar-brand img {
+    display: block;
+    width: 165px;
+    max-width: 100%;
+    height: 58px;
+    object-fit: contain;
+    object-position: left center;
+    transition: transform 0.3s ease;
+}
+
+.navbar-custom .navbar-brand:hover img {
+    transform: scale(1.03);
+}
+
+/* Navigation links */
+.navbar-custom .navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    position: relative;
+    display: inline-block;
+    padding: 12px 15px;
+    color: var(--kzn-nav-text);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Animated underline */
+.navbar-custom .navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    bottom: 5px;
+    width: calc(100% - 30px);
+    height: 2px;
+    background: var(--kzn-nav-primary);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover,
+.navbar-custom .navbar-nav .nav-link:focus,
+.navbar-custom .navbar-nav .nav-link.active {
+    color: var(--kzn-nav-primary);
+}
+
+.navbar-custom .navbar-nav .nav-link:hover::after,
+.navbar-custom .navbar-nav .nav-link:focus::after,
+.navbar-custom .navbar-nav .nav-link.active::after {
+    transform: scaleX(1);
+}
+
+/* Mobile hamburger button */
+.navbar-custom .navbar-toggler {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 42px;
+    padding: 8px;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    background: #ffffff;
+    box-shadow: none;
+}
+
+.navbar-custom .navbar-toggler:focus {
+    box-shadow: 0 0 0 3px rgba(229, 57, 53, 0.15);
+    outline: none;
+}
+
+.navbar-custom .navbar-toggler-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Sticky navbar on scroll */
+.navbar-custom.sticky-navbar {
+    background: #ffffff;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* =====================================
+   TABLET AND MOBILE
+===================================== */
+
+@media (max-width: 991.98px) {
+    .navbar-custom {
+        padding: 10px 0;
+    }
+
+    .navbar-custom .navbar-brand img {
+        width: 145px;
+        height: 52px;
+    }
+
+    .navbar-custom .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        max-height: calc(100vh - 75px);
+        overflow-y: auto;
+        padding: 12px 20px 20px;
+        background: #ffffff;
+        border-top: 1px solid #eeeeee;
+        box-shadow: 0 10px 18px rgba(0, 0, 0, 0.08);
+    }
+
+    .navbar-custom .navbar-nav {
+        align-items: stretch;
+        gap: 0;
+    }
+
+    .navbar-custom .navbar-nav .nav-item {
+        width: 100%;
+    }
+
+    .navbar-custom .navbar-nav .nav-link {
+        display: block;
+        width: 100%;
+        padding: 14px 10px;
+        font-size: 14px;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .navbar-custom .navbar-nav .nav-link::after {
+        display: none;
+    }
+}
+
+/* =====================================
+   SMALL MOBILE
+===================================== */
+
+@media (max-width: 575.98px) {
+    .navbar-custom {
+        min-height: 68px;
+        padding: 8px 0;
+    }
+
+    .navbar-custom .navbar-brand img {
+        width: 125px;
+        height: 45px;
+    }
+
+    .navbar-custom .navbar-toggler {
+        width: 40px;
+        height: 38px;
+    }
+
+    .navbar-custom .navbar-collapse {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+@media (min-width: 992px) {
+    #navbarbutton {
+        display: none;
+    }
+}
+/* Remove unwanted spacing from empty sections */
+section:empty,
+.container:empty {
+    display: none;
+}
+
+/* Prevent unwanted horizontal scrolling */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}.kzn-footer {
+    width: 100%;
+    padding: 60px 0 35px;
+    background: #141212;
+    color: #fff;
+    overflow: hidden;
+}
+
+.kzn-footer .container {
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+    .kzn-footer {
+        padding: 40px 20px 25px;
+    }
+}
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .navbar-custom,
+    .navbar-custom * {
+        transition: none !important;
+    }
+}
+
+
+
+/* ==============================
+   KZN Hero Section
+============================== */
+
+.kzn-hero {
+    position: relative;
+    width: 100%;
+    min-height: 700px;
+    padding: 80px 0 60px;
+    display: flex;
+    align-items: center;
+    background-image: url("../assets/img/background_image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    color: #fff;
+}
+
+.kzn-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(0, 0, 0, 0.78),
+        rgba(0, 0, 0, 0.40)
+    );
+}
+
+.kzn-hero-container {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.kzn-hero-content {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.kzn-hero-content h1 {
+    font-size: clamp(36px, 5vw, 68px);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.kzn-hero-content p {
+    font-size: clamp(16px, 2vw, 21px);
+    line-height: 1.7;
+    margin: 0;
+    color: #f1f1f1;
+}
+
+/* Feature Cards */
+
+.kzn-feature-row {
+    align-items: stretch;
+}
+
+.kzn-feature-card {
+    height: 100%;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s ease,
+                background 0.3s ease;
+}
+
+.kzn-feature-card:hover {
+    transform: translateY(-6px);
+    background: rgba(255, 255, 255, 0.18);
+}
+
+.kzn-feature-icon {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f43b3b;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 25px;
+}
+
+.kzn-feature-info h3 {
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 12px;
+}
+
+.kzn-feature-info a {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.kzn-feature-info a:hover {
+    color: #ff5050;
+}
+
+/* Tablet */
+
+@media (max-width: 991.98px) {
+    .kzn-hero {
+        min-height: auto;
+        padding: 80px 0 50px;
+    }
+
+    .kzn-hero-content {
+        margin-bottom: 45px;
+    }
+
+    .kzn-feature-card {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .kzn-feature-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+    }
+
+    .kzn-feature-info h3 {
+        font-size: 18px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 575.98px) {
+    .kzn-hero {
+        padding: 65px 0 35px;
+        background-position: center;
+    }
+
+    .kzn-hero-content {
+        margin-bottom: 35px;
+    }
+
+    .kzn-hero-content h1 {
+        font-size: 34px;
+    }
+
+    .kzn-hero-content p {
+        font-size: 16px;
+    }
+
+    .kzn-feature-card {
+        min-height: 120px;
+        padding: 18px;
+    }
+
+    .kzn-feature-info h3 {
+        font-size: 17px;
+    }
+
+    .kzn-feature-info a {
+        font-size: 14px;
+    }
+}
+
+
+
+/* ==============================
+   KZN SERVICES SECTION
+============================== */
+
+.kzn-services-section {
+    padding: 90px 0;
+    background: #f7f8fc;
+    overflow: hidden;
+}
+
+/* Section Heading */
+
+.kzn-services-heading {
+    max-width: 720px;
+    margin: 0 auto 50px;
+}
+
+.kzn-services-subtitle {
+    display: inline-block;
+    color: #5269db;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.kzn-services-heading h2 {
+    color: #17233e;
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 18px;
+}
+
+.kzn-services-heading p {
+    color: #687386;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* Service Card */
+
+.kzn-service-card {
+    --kzn-service-color: #5269db;
+
+    position: relative;
+    height: 100%;
+    min-height: 340px;
+    padding: 35px 28px;
+    background: #ffffff;
+    border: 1px solid #e8ebf2;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+/* Decorative Background Shape */
+
+.kzn-service-card::before {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    right: -65px;
+    top: -65px;
+    border-radius: 50%;
+    background: var(--kzn-service-color);
+    opacity: 0.07;
+    transition: transform 0.4s ease;
+    pointer-events: none;
+}
+
+/* Hover Effect */
+
+.kzn-service-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--kzn-service-color);
+    box-shadow: 0 18px 45px rgba(31, 45, 80, 0.10);
+}
+
+.kzn-service-card:hover::before {
+    transform: scale(2);
+}
+
+/* Individual Service Colors */
+
+.kzn-web-service {
+    --kzn-service-color: #5269db;
+}
+
+.kzn-qr-service {
+    --kzn-service-color: #159b70;
+}
+
+.kzn-app-service {
+    --kzn-service-color: #e78335;
+}
+
+/* Service Icon */
+
+.kzn-service-icon {
+    width: 68px;
+    height: 68px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    color: var(--kzn-service-color);
+    background: color-mix(
+        in srgb,
+        var(--kzn-service-color) 12%,
+        white
+    );
+    border-radius: 16px;
+    font-size: 29px;
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease,
+        color 0.35s ease;
+}
+
+.kzn-service-card:hover .kzn-service-icon {
+    color: #ffffff;
+    background: var(--kzn-service-color);
+    transform: rotate(-5deg) scale(1.05);
+}
+
+/* Service Title */
+
+.kzn-service-card h3 {
+    color: #17233e;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+/* Service Description */
+
+.kzn-service-card p {
+    color: #687386;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* Learn More Link */
+
+.kzn-service-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: auto;
+    color: var(--kzn-service-color);
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: gap 0.3s ease;
+}
+
+.kzn-service-link i {
+    font-size: 13px;
+    transition: transform 0.3s ease;
+}
+
+.kzn-service-link:hover {
+    color: var(--kzn-service-color);
+    gap: 15px;
+}
+
+.kzn-service-link:hover i {
+    transform: translateX(3px);
+}
+
+/* ==============================
+   TABLET RESPONSIVE
+============================== */
+
+@media (max-width: 991.98px) {
+    .kzn-services-section {
+        padding: 70px 0;
+    }
+
+    .kzn-services-heading {
+        margin-bottom: 40px;
+    }
+
+    .kzn-service-card {
+        min-height: 320px;
+        padding: 30px 24px;
+    }
+
+    .kzn-service-card h3 {
+        font-size: 20px;
+    }
+}
+
+/* ==============================
+   MOBILE RESPONSIVE
+============================== */
+
+@media (max-width: 575.98px) {
+    .kzn-services-section {
+        padding: 55px 0;
+    }
+
+    .kzn-services-heading {
+        margin-bottom: 30px;
+    }
+
+    .kzn-services-heading h2 {
+        font-size: 28px;
+    }
+
+    .kzn-services-heading p {
+        font-size: 14px;
+        padding: 0 5px;
+    }
+
+    .kzn-service-card {
+        min-height: auto;
+        padding: 28px 23px;
+        border-radius: 14px;
+    }
+
+    .kzn-service-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .kzn-service-card h3 {
+        font-size: 20px;
+    }
+
+    .kzn-service-card p {
+        font-size: 14px;
+    }
+}
+
+/* Respect reduced-motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+    .kzn-service-card,
+    .kzn-service-card::before,
+    .kzn-service-icon,
+    .kzn-service-link,
+    .kzn-service-link i {
+        transition: none;
+    }
+
+    .kzn-service-card:hover {
+        transform: none;
+    }
+}
+
+/* ===== KZN Footer ===== */
+    .kzn-footer {
+        background: #141313;
+        color: #d0d0d0;
+        font-family: Arial, sans-serif;
+    }
+
+    .kzn-footer-main {
+        padding: 60px 0 40px;
+    }
+
+    .kzn-footer-column {
+        height: 100%;
+    }
+
+    .kzn-footer-logo {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    .kzn-footer-logo img {
+        width: 145px;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .kzn-footer-title {
+        position: relative;
+        color: #fff;
+        font-size: 19px;
+        font-weight: 700;
+        margin-bottom: 28px;
+        padding-bottom: 12px;
+    }
+
+    .kzn-footer-title::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 45px;
+        height: 3px;
+        background: #e53935;
+    }
+
+    .kzn-footer-description {
+        font-size: 14px;
+        line-height: 1.9;
+        margin-bottom: 20px;
+        color: #bdbdbd;
+        overflow-wrap: anywhere;
+    }
+
+    .kzn-footer-address {
+        font-size: 14px;
+        line-height: 1.9;
+        margin-bottom: 15px;
+        overflow-wrap: anywhere;
+    }
+
+    .kzn-footer-contact {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 15px;
+    }
+
+    .kzn-footer-contact i {
+        color: #e53935;
+        font-size: 17px;
+        margin-top: 4px;
+        min-width: 18px;
+    }
+
+    .kzn-footer-contact a,
+    .kzn-footer-contact span {
+        color: #d0d0d0;
+        font-size: 14px;
+        line-height: 1.8;
+        overflow-wrap: anywhere;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .kzn-footer-contact a:hover {
+        color: #fff;
+    }
+
+    .kzn-footer-links {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .kzn-footer-links li {
+        margin-bottom: 13px;
+    }
+
+    .kzn-footer-links a {
+        display: inline-block;
+        color: #bdbdbd;
+        font-size: 14px;
+        line-height: 1.6;
+        text-decoration: none;
+        transition: color 0.3s ease, padding-left 0.3s ease;
+    }
+
+    .kzn-footer-links a:hover {
+        color: #fff;
+        padding-left: 6px;
+    }
+
+    .kzn-footer-links a i {
+        color: #e53935;
+        font-size: 11px;
+        margin-right: 8px;
+    }
+
+    .kzn-footer-social {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .kzn-footer-social a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 38px;
+        border: 1px solid #454545;
+        border-radius: 50%;
+        color: #fff;
+        text-decoration: none;
+        transition: background 0.3s ease, border-color 0.3s ease;
+    }
+
+    .kzn-footer-social a:hover {
+        background: #e53935;
+        border-color: #e53935;
+    }
+
+    .kzn-footer-bottom {
+        border-top: 1px solid #333;
+        padding: 20px 0;
+        background: #0d0d0d;
+    }
+
+    .kzn-footer-copyright {
+        color: #aaa;
+        font-size: 13px;
+        line-height: 1.8;
+        margin: 0;
+    }
+
+    .kzn-footer-copyright a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .kzn-footer-copyright a:hover {
+        color: #e53935;
+    }
+
+    /* ===== Tablet: 2 columns ===== */
+    @media (max-width: 991.98px) {
+        .kzn-footer-main {
+            padding: 45px 0 25px;
+        }
+
+        .kzn-footer-column {
+            margin-bottom: 25px;
+        }
+
+        .kzn-footer-title {
+            font-size: 18px;
+            margin-bottom: 22px;
+        }
+    }
+
+    /* ===== Mobile: 1 column ===== */
+    @media (max-width: 575.98px) {
+        .kzn-footer-main {
+            padding: 35px 0 15px;
+        }
+
+        .kzn-footer-column {
+            margin-bottom: 25px;
+        }
+
+        .kzn-footer-logo img {
+            width: 125px;
+        }
+
+        .kzn-footer-title {
+            font-size: 17px;
+            margin-bottom: 20px;
+        }
+
+        .kzn-footer-description,
+        .kzn-footer-address,
+        .kzn-footer-contact a,
+        .kzn-footer-contact span,
+        .kzn-footer-links a {
+            font-size: 14px;
+        }
+
+        .kzn-footer-bottom {
+            padding: 16px 0;
+            text-align: center;
+        }
+    }
+
+    /* ===== Accessibility ===== */
+    @media (prefers-reduced-motion: reduce) {
+        .kzn-footer *,
+        .kzn-footer *::before,
+        .kzn-footer *::after {
+            transition: none !important;
+        }
+    }
