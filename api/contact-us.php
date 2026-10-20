@@ -275,7 +275,15 @@
 
 <body>
 
-<?php include './navbar.php'; ?>
+<?php
+$navbarPath = __DIR__ . '/navbar.php';
+
+if (file_exists($navbarPath)) {
+    include $navbarPath;
+} else {
+    error_log('Navbar not found: ' . $navbarPath);
+}
+?>
 
 <!-- ==================== ABOUT HERO ==================== -->
 <section class="kzn-about-hero">
@@ -491,7 +499,15 @@
 </section>
 
 <!-- ==================== FOOTER ==================== -->
-<?php include './footer.php'; ?>
+<?php
+$footerPath = __DIR__ . '/footer.php';
+
+if (file_exists($footerPath)) {
+    include $footerPath;
+} else {
+    error_log('Footer not found: ' . $footerPath);
+}
+?>
 
 <!-- Bootstrap JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

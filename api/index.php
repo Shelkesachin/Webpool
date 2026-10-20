@@ -1,5 +1,13 @@
-<?php include './navbar.php'; ?>
+<!--  -->
+<?php
+$navbarPath = __DIR__ . '/navbar.php';
 
+if (file_exists($navbarPath)) {
+    include $navbarPath;
+} else {
+    error_log('Navbar not found: ' . $navbarPath);
+}
+?>
 <!-- Hero Section Start -->
 <section class="kzn-hero">
     <div class="kzn-hero-overlay"></div>
@@ -162,8 +170,15 @@
 
     <!-- section fourth start --------------------------------------------->
 
+<?php
+$footerPath = __DIR__ . '/footer.php';
 
-<?php include './footer.php'; ?>
+if (file_exists($footerPath)) {
+    include $footerPath;
+} else {
+    error_log('Footer not found: ' . $footerPath);
+}
+?>
 
 </body>
 

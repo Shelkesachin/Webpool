@@ -1,4 +1,12 @@
-<?php include './navbar.php'; ?>
+<?php
+$navbarPath = __DIR__ . '/navbar.php';
+
+if (file_exists($navbarPath)) {
+    include $navbarPath;
+} else {
+    error_log('Navbar not found: ' . $navbarPath);
+}
+?>
 <style>
     .kzn-tp-bgimg.defaultimg {
         background-repeat: no-repeat;
@@ -555,7 +563,15 @@
 
 
 
-<?php include './footer.php'; ?>
+<?php
+$footerPath = __DIR__ . '/footer.php';
+
+if (file_exists($footerPath)) {
+    include $footerPath;
+} else {
+    error_log('Footer not found: ' . $footerPath);
+}
+?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
 <script>
