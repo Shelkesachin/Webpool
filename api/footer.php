@@ -10,8 +10,8 @@
                 <div class="col-12 col-sm-6 col-md-3 col-lg-3">
                     <div class="kzn-footer-column">
 
-                        <a href="./index.html" class="kzn-footer-logo">
-                            <img src="./assets/img/logos.png"
+                        <a href="./index.php" class="kzn-footer-logo">
+                            <img src="../assets/img/logos.png"
                                  alt="Kaizen Soft Services logo"
                                  loading="lazy">
                         </a>

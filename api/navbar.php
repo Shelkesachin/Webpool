@@ -8,11 +8,11 @@
 
 
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
 
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="./assets/fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet" href="../assets/fontawesome-free-6.6.0-web/css/all.min.css">
     <!-- Slick Carousel CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
@@ -31,19 +31,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/docs_src/assets/css/animate.css">
+    <link rel="stylesheet" href="../assets/OwlCarousel2-2.3.4/docs_src/assets/css/animate.css">
     <!-- <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/docs/assets/css/docs.theme.min.css"> -->
 
     <!-- WOW.js CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/wow.js/1.1.2/wow.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./include/style.css">
-    <script src="./include/script.js" defer></script>
+    <link rel="stylesheet" href="../include/style.css">
+     <script src="../include/script.js" defer></script>
+  
     <style>
         .kzn-tp-bgimg.defaultimg {
             background-repeat: no-repeat;
-            background-image: url('./assets/img/background_image.jpg');
+            background-image: url('../assets/img/background_image.jpg');
             background-size: cover;
             background-position: center center;
             width: 100%;
@@ -136,7 +137,7 @@
     <div class="container nav-main">
 
         <a class="navbar-brand" href="./index.php">
-            <img src="./assets/img/logos.png" alt="Company logo">
+            <img src="../assets/img/logos.png" alt="Company logo">
         </a>
 
         <button class="navbar-toggler"
@@ -166,11 +167,11 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="./about.html">About</a>
+                    <a class="nav-link" href="./about.php">About</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="./contact-us.html">Contact</a>
+                    <a class="nav-link" href="./contact-us.php">Contact</a>
                 </li>
 
             </ul>

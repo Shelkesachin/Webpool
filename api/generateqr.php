@@ -874,45 +874,101 @@
                 generateButton.disabled = true;
                 message.textContent = "Uploading file...";
 
-                try {
+                // try {
 
-                    const formData = new FormData();
-                    formData.append("file", file);
+                //     const formData = new FormData();
+                //     formData.append("file", file);
 
-                    const response = await fetch("/api/upload", {
-                        method: "POST",
-                        body: formData
-                    });
+                //     // const response = await fetch("/assets/upload", {
+                //     //     method: "POST",
+                //     //     body: formData
+                //     // });
+                    
 
-                    if (!response.ok) {
-                        throw new Error("File upload failed.");
-                    }
+                //         const response = await fetch("/api/upload.php", {
+                //             method: "POST",
+                //             body: formData
+                //         });
 
-                    const data = await response.json();
+                //         const datas = await response.json();
 
-                    if (!data.url) {
-                        throw new Error("Server did not return the file URL.");
-                    }
+                //         if (!response.ok || !datas.success || !datas.url) {
+                //             throw new Error(dataset.message || "File upload failed.");
+                //         }
 
-                    const fileUrl = new URL(data.url, window.location.origin);
 
-                    if (!["http:", "https:"].includes(fileUrl.protocol)) {
-                        throw new Error("Invalid file URL.");
-                    }
 
-                    qrValue = fileUrl.href;
-                    uploadedFileUrl = qrValue;
+                //     if (!response.ok) {
+                //         throw new Error("File upload failed.");
+                //     }
 
-                } catch (error) {
+                //     const data = await response.json();
 
-                    console.error(error);
+                //     if (!data.url) {
+                //         throw new Error("Server did not return the file URL.");
+                //     }
 
-                    message.textContent =
-                        "Upload failed. Configure your server's /api/upload endpoint.";
+                //     const fileUrl = new URL(data.url, window.location.origin);
 
-                    generateButton.disabled = false;
-                    return;
-                }
+                //     if (!["http:", "https:"].includes(fileUrl.protocol)) {
+                //         throw new Error("Invalid file URL.");
+                //     }
+
+                //     qrValue = fileUrl.href;
+                //     uploadedFileUrl = qrValue;
+
+                // }
+                //  catch (error) {
+
+                //     console.error(error);
+
+                //     message.textContent =
+                //         "Upload failed. Configure your server's /assets /upload endpoint.";
+
+                //     generateButton.disabled = false;
+                //     return;
+                // }
+                
+try {
+    const formData = new FormData();
+    formData.append("file", file);
+
+    // Upload to the PHP endpoint
+    const response = await fetch("/api/upload.php", {
+        method: "POST",
+        body: formData
+    });
+
+    // Read the response only once
+    const data = await response.json();
+
+    if (!response.ok || !data.success || !data.url) {
+        throw new Error(data.message || "File upload failed.");
+    }
+
+    // Validate the returned file URL
+    const fileUrl = new URL(data.url, window.location.origin);
+
+    if (!["http:", "https:"].includes(fileUrl.protocol)) {
+        throw new Error("Invalid file URL.");
+    }
+
+    qrValue = fileUrl.href;
+    uploadedFileUrl = qrValue;
+
+    message.textContent = "File uploaded successfully.";
+
+} catch (error) {
+    console.error("QR upload error:", error);
+
+    message.textContent = error.message || "File upload failed.";
+
+    return;
+
+} finally {
+    generateButton.disabled = false;
+}
+
 
                 generateButton.disabled = false;
             }
