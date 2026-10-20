@@ -39,8 +39,8 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../include/style.css">
-     <script src="../include/script.js" defer></script>
-  
+    <script src="../include/script.js" defer></script>
+
     <style>
         .kzn-tp-bgimg.defaultimg {
             background-repeat: no-repeat;
@@ -128,19 +128,19 @@
 </head>
 
 <body>
-   
 
-   
-<nav class="navbar navbar-expand-lg navbar-custom fixed-top primary-navigation"
-     role="navigation" aria-label="Main navigation">
 
-    <div class="container nav-main">
 
-        <a class="navbar-brand" href="./index.php">
-            <img src="../assets/img/logos.png" alt="Company logo">
-        </a>
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top primary-navigation"
+        role="navigation" aria-label="Main navigation">
 
-        <button class="navbar-toggler"
+        <div class="container nav-main">
+
+            <a class="navbar-brand" href="./index.php">
+                <img src="../assets/img/logos.png" alt="Company logo">
+            </a>
+
+            <button class="navbar-toggler"
                 type="button"
                 id="navbarbutton"
                 data-bs-toggle="collapse"
@@ -149,33 +149,31 @@
                 aria-expanded="false"
                 aria-label="Toggle navigation">
 
-            <span class="navbar-toggler-icon"></span>
-        </button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
 
-                <li class="nav-item">
-                    <a class="nav-link active"
-                       aria-current="page"
-                       href="./index.php">Home</a>
-                </li>
-                 <li class="nav-item">
-                    <a class="nav-link "
-                       aria-current="page"
-                       href="./generateqr.php">Generate QR</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/api/index.php">Home</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="./about.php">About</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/api/generateqr.php">Generate QR</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="./contact-us.php">Contact</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/api/about.php">About</a>
+                    </li>
 
-            </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/api/contact-us.php">Contact</a>
+                    </li>
+
+
+                </ul>
+            </div>
+
         </div>
-
-    </div>
-</nav>
+    </nav>
